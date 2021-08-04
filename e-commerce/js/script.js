@@ -1,26 +1,6 @@
 $(document).ready(function() {
 
 
-    // start navbar function
-    $(function() {
-        $(window).scroll(function() {
-        
-            if($(window).scrollTop() > 200) {
-                $('.navbar').fadeIn(100).addClass('fixed-navbar')
-        
-            }else {
-                $('.navbar').removeClass('fixed-navbar')
-            }
-        })
-
-        
-        $('.navbar-toggler').click(function() {
-            if(!$('.navbar-collapse').hasClass('show')) {
-                $('.navbar').css('height', 'initial')
-            }
-        })
-    })
-    // end navbar functions 
 
 
 
