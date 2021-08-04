@@ -1,0 +1,488 @@
+@import "_includes.scss";
+@import "_navbar.scss";
+@import "_main-footer.scss";
+@import "_responsive.scss";
+
+
+
+
+header {
+    width: 100% !important;
+    height: 100vh !important;
+    background-size: cover;
+    position: relative;
+    
+    #slideshow {
+        height: 100vh !important;
+        position: absolute;
+        z-index: -1 !important;
+    }
+    .overlay {
+        background:rgba(0, 0, 0, 0.75);
+        height: 100vh;
+        .header-content {
+           
+            .header-txt {
+                @extend %specialHeading;
+                color: #fff;
+                font-size: 60px;
+                font-family: "Poppins";
+            }
+            .sub-heading {
+                color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .buttons {
+                padding-top: 25px;
+                a {
+                    margin: 5px 10px 5px 0;
+                }
+            
+            }
+        }
+        
+    }
+    .to-bottom {
+        i {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 60px;
+            cursor: pointer;
+        }
+        animation: buttonToBottom .9s infinite;
+    }
+    
+}
+
+
+@keyframes buttonToBottom {
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+}
+
+
+
+
+// -------------------- start what is auto detailing -------------
+
+.what-is-detailing ~ svg {
+    position: absolute;
+    z-index: 99;
+}
+// -------------------- end what is auto detailing -------------
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------- start about --------------
+.about {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: .25;
+        
+    }
+    p {
+        color: rgb(194, 194, 194);
+    }
+}
+.about .img {
+    img {
+        border-radius: 10px;
+    }
+    
+}
+
+// ----------------------------- end about --------------
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------- start services --------------
+.services {
+    background: linear-gradient(165deg, #efeff0 50%, #fff 50%);
+    .service-box {
+        padding: 10px;
+        background: #faf9f9;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0px 0px 8px #8f8f8f;
+        overflow: hidden;
+        .icon i {
+            font-size: 40px;
+            color: rgb(85, 85, 85);
+            line-height: 100px;
+        }
+        .heading {
+            font-family: "Poppins";
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: $mainColor;
+        }
+        .red-line {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: $mainColor;
+            bottom: 0;
+            left: 0;
+            transition: .5s ease-in-out;
+        }
+        &:hover {
+            .red-line {
+                width: 0;
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+        
+    }
+}
+// ----------------------------- end services --------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------- start other section --------------
+.jewels-auto {
+    background: url('../imgs/closeup-shot-retro-car-with-only-back-wheels-ground-street-night.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.8);
+        height: 250px;
+        .logo img {
+            width: 200px;
+        }
+        .sub-heading {
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+        }
+        
+    }
+}
+// ----------------------------- end other section --------------
+
+
+
+
+
+
+
+// ----------------------------- start other section --------------
+.products {
+    
+    .product-box {
+        border: 1px solid #e1e1e1;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 15px 0;
+        overflow: hidden;
+
+        .img {
+            border-bottom: 1px solid #e5e5e5;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-height: 100%;
+            }
+        }
+        .title {
+            font-family: "Rubik";
+            font-weight: 600;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 15px;
+            color: rgb(117, 117, 117);
+        }
+        .price {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-family: "Rubik";
+            font-size: 20px;
+        }
+        .rates {
+            i {
+                font-size: 12px;
+                color: rgb(246, 211, 8);
+            }
+        }
+        .red-btn {            
+            color: #000;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 15px 0;
+            display: block;
+            font-size: 13px;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+            &:hover {
+                background: $mainColor;
+                color: #fff;
+            }
+        }
+    }
+    .owl-nav {
+        button {
+            transition: .2s ease-in-out;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #c7c7c7 !important;
+            border-radius: 50%;
+            background: #fff !important;
+            position: absolute;
+            color: #000;
+            &.owl-prev {
+                top: 50%;
+                left: -23px;     
+            }
+            &.owl-next {
+                top: 50%;
+                right: -23px;
+            }
+        }
+        button:hover {
+            background: #fff;
+            color: initial;
+            
+        } 
+        span {
+            font-size: 25px;
+            line-height: 23px;
+        }
+    }
+}
+// ----------------------------- end other section --------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------- start testimonials -------------
+.testimonials {
+    .testimonial-box {
+        position: relative;
+        margin: 15px 10px;
+        padding: 20px 0;
+        border-radius: 10px;
+        .avatar {
+            width: 100px;
+            margin: 10px auto;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                height: 100% !important;
+            }
+        
+        }
+        .uid {
+            font-size: 15px;
+            padding: 15px 0;
+            font-weight: bold;
+            font-family: "Rubik";
+            text-align: center;
+        }
+        .rates {
+            i {
+                font-size: 12px;
+                color: rgb(204, 146, 20);
+            }
+        }
+        .quote-icon {
+            font-size: 40px;
+            color: rgb(195, 110, 110);
+        
+        }
+        p {
+            padding-top: 15px;
+            font-size: 14px !important;
+            color: rgb(136, 136, 136);
+        }
+    }
+}
+// ------------------------- end testimonials -------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------- start contact -------------
+.contact {
+    .form {
+        position: relative;
+        .input{
+            width: 100%;
+            margin: 15px 0;
+            border:none;
+            background:none;
+            outline: none;
+            border-bottom: 1px solid #333;
+            padding: 10px;
+        }
+        textarea{
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+            padding: 20px;
+            outline: none;
+        }
+        .form-group{
+            position: relative;
+        }
+        .form-group span::before{
+            content: attr(data-placeholder);
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            transition: .5s;
+            z-index: -1;
+            padding: 10px;
+            color: #9e9083;
+            display: block;
+        }
+        .form-group .focus + span::before{
+            top: 15%;
+            position: absolute;
+        }
+        .form-group .focus + span::after{
+            width: 100%;
+        }
+        input[type="submit"]{
+            width: 100%;
+            background:none;
+            border:1px solid $mainColor;
+            color: $mainColor;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        input[type="submit"]:hover{
+            background: $mainColor;
+            border:1px solid $mainColor;
+            color: white;
+            transition: .4s ease-in-out;
+        }
+    }
+}
+
+
+
+
+.gallery {
+    .lightboxed--container {
+        z-index: 99999 !important;
+    }
+    img {
+        width: 100% !important;
+        margin: 10px;
+        transition: .2s ease-in-out;
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
+}
+// -------------------------------------- end contact ----------------
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------- start tutos -----------
+.tutos {
+    iframe {
+        height: 250px;
+    }
+}
+// ----------------------------------------- end tutos -----------
+
+
+
+
+
+
+
+
+

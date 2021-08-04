@@ -1,0 +1,147 @@
+
+
+// -------------------------- start footer ----------------------
+.main-footer {
+    background-color: rgb(31, 31, 31);
+    .logo {
+        img {
+            width: 150px;
+        }
+
+    }
+
+
+    .footer-features {
+        color: #fff;
+        text-align: center;
+        .feature {
+            padding: 20px 0;
+            .icon {
+                i {
+                    font-size: 35px;
+                    color: #fff;
+                    transition: .3s ease-in-out;
+                    
+                }
+            } 
+            .heading {
+                padding-top: 15px;
+                font-size: 15px;
+                font-family: "Poppins";
+            }
+            .caption {
+                color: #999;
+                font-size: 14px;
+            }
+
+
+            &:hover {
+                .icon i {
+                    transform: translateY(-5px);
+                }
+            }
+
+        }
+    }
+
+    .social-media-icons {
+        padding: 20px 0;
+        a {
+            color: #fff;
+            text-decoration: none;
+            i {
+                font-size: 20px;
+                padding: 0 10px;
+                transition: .3s ease-in-out;
+                &:hover {
+                    transform: translateY(-4px);
+                }
+            }
+        }
+    }
+    .links-title {
+        color: #eee0e0;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        
+    }
+    ul {
+        padding: 15px 0;
+        li {
+            list-style: none;
+            color: #999;
+            font-size: 13px;
+            padding-bottom: 12px;
+            a {
+                font-size: 13px;
+                color: #999;
+                &:hover {
+                    color: #999 !important;
+                }
+            }
+            i {
+                color: #ddd;
+                font-size: 17px;
+                transform: translateY(3px);
+                
+            }
+        }
+    }
+    .newsletter {
+        color: #fff;
+        input {
+            background: none;
+            border: 1px solid rgb(77, 77, 77);
+            padding: 15px;
+            height: 50px;
+            width: 100%;
+            font-size: 14px;
+            color: #fff !important;
+        }
+        button {
+            color: #fff;
+            font-size: 13px;
+            background-color: $mainColor;
+            border: 1px solid rgb(77, 77, 77);
+            border-radius: 3px;
+            height: 50px;
+            transition: .3s ease-in-out;
+           
+        }
+    }
+    .copyright {
+        color: rgb(168, 168, 168);
+        font-size: 15px;
+        line-height: 50px;
+        a {
+            color: $mainColor !important;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+}
+// ---------------------------- end footer ------------------------
+
+
+
+
+
+@media (max-width: 770px) {
+
+    .main-footer {
+        .logo {
+            text-align: center;
+        }
+        .social-media-icons {
+            text-align: center;
+            padding: 30px !important;
+        }
+        .copyright {
+            float: none !important;
+            text-align: center;
+        }
+    }
+
+}

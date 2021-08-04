@@ -1,0 +1,110 @@
+@media(max-width: 770px) {
+
+    // login & registration 
+    .login, .registration {
+        width: 95% !important;
+        .img {
+            img {
+                position: static !important;
+                width: 100% !important;
+                transform: none !important;
+            }
+        }
+    }
+
+
+    // header nav of mobile version    
+    .sm-header-nav {
+        .header-brand {
+            img {
+                width: 90px !important;
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+
+
+
+    // header slideshow 
+    .header-slideshow .carousel .carousel-caption h5 {
+        font-size: 37px !important;
+    }
+
+
+    // website features (just after the header )
+    .website-features .feature {
+        padding: 15px 0;
+    }
+
+
+}
+
+
+
+
+
+@media(max-width: 992px ) {
+    // header nav of desktop version 
+    .md-header-nav, .sm-header-nav {
+        .action-list {
+            float: right;
+            .action-icon-txt {
+                display: none;
+            }
+        } 
+        .dropdown-toggle::after {
+            display: none;
+        }
+        ul {
+            padding: 13px 0;
+            i {
+                font-size: 30px !important;
+            }
+        }
+    }
+
+    // drop down login of the header ( mobile version )
+    .sm-header-nav .dropdown-menu#dropdown-login {
+        left: 0 !important ;
+    }
+
+
+}
+
+
+
+@media(max-width: 460px) {
+    // header nav of mobile version 
+    .sm-header-nav {
+        .action-list {
+            i {
+                font-size: 20px !important;
+            }
+        } 
+    }
+
+    // header slideshow s
+    .header-slideshow .carousel .carousel-caption h5 {
+        font-size: 36px !important;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 570px) {
+    // custom class 
+    .border-sm-bottom {
+        border-bottom: 1px solid #d4d4d4 !important;
+    }
+}

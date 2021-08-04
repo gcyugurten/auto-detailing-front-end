@@ -1,0 +1,60 @@
+@media (max-width: 770px) {
+    // ----------------------------- start header section --------------
+    .main-header {
+        .header-txt {
+            font-size: 40px !important;
+        }
+    }
+    // ----------------------------- end header section --------------
+
+
+
+
+    // ----------------------------- start products section --------------
+    .products {
+        .product-box .img {
+            height: 330px !important;
+        }
+    }
+    // ----------------------------- end products section --------------
+
+
+
+   
+
+
+}
+
+
+
+
+
+
+@media(max-width :500px) {
+    // ---------------------------- start about -----------------
+    .about {
+        video {
+            transform: translate(-400px);
+        }
+    }
+    // ---------------------------- end about -----------------   
+}
+
+
+
+
+
+
+
+@media(max-width: 1040px) {
+ // ---------------------------- start about -----------------
+.about {
+    video {
+        height: 100%;
+        width: initial !important;
+        // transform: translate(-400px);
+
+    }
+}
+// ---------------------------- end about -----------------   
+}

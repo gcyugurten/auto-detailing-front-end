@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../imgs/favicon.png">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/hover-min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login | Jewels Auto Detailing </title>
+
+</head>
+<body>
+    
+    <!-- start main navbar  -->
+    <header>
+
+        <!-- start upper bar (where we declare more information about shipping) -->
+        <div class="upper-bar font-weight-bold text-center">
+            Livraison Gratuite pour les commandes +130€. &nbsp; <u><a href="">Cliquez ici pour en savoir plus</a></u>
+        </div>
+        <!-- end upper bar -->
+
+        <div class="header-nav py-4">
+
+            <!-- header nav for desktop version  -->
+            <div class="md-header-nav d-md-block d-sm-none d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-3">
+                            <a class="header-brand" href="#">
+                                <img src="../imgs/logo-black.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 search-product">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Rechercher.." name="q" class="form-control">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col col-sm-3">
+                            <ul class="action-list">
+                                <li>
+                                    <div class="dropdown">
+                                        <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-user"></i>  <br>
+                                            <span class="action-icon-txt">Mon compte</span>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <h6 class="text-center dropdown-header pt-3">Se connecter</h6>
+                                            <form class="px-3 py-3">
+                                                <div class="form-group">
+                                                    <label for="email">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Address Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mot de passe</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                                                </div>
+                                                
+                                                <button type="submit" class="red-button">S'identifier</button>
+                                                <div class="links py-2">
+                                                    <div class="link">
+                                                        <span>Vous n'avez pas de compte ?</span>
+                                                        <a href="registration.html">Inscrivez-vous</a>
+                                                    </div>
+                                                    <div class="link">
+                                                        <span>Vous avez oubilé le mot de passe ?</span>
+                                                        <a href="">Récupérez-le</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="cart">
+                                        <i class="fas fa-shopping-cart"></i>  <br>
+                                        <span class="action-icon-txt">Panier</span>
+                                        <span class="cart-count">0</span>
+                                        
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header nav for desktop version  -->
+
+
+            <!-- start header nav for mobile version  -->
+            <div class="sm-header-nav d-md-none d-sm-block d-block">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-2">
+                            <div class="categories-toggler">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-5 text-center">
+                            <a class="header-brand" href="#">
+                                <img src="../imgs/logo-black.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="col-5">
+                            <ul class="action-list">
+
+                                <li>
+                                    <div class="dropdown">
+                                        <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-user"></i>  <br>
+                                            <span class="action-icon-txt">Mon compte</span>
+                                        </a>
+                                        <div class="dropdown-menu" id="dropdown-login">
+                                            <h6 class="text-center dropdown-header pt-3">Se connecter</h6>
+                                            <form class="px-3 py-3">
+                                                <div class="form-group">
+                                                    <label for="email">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Address Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mot de passe</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                                                </div>
+                                                
+                                                <button type="submit" class="red-button">S'identifier</button>
+                                                <div class="links py-2">
+                                                    <div class="link">
+                                                        <span>Vous n'avez pas de compte ?</span>
+                                                        <a href="">Inscrivez-vous</a>
+                                                    </div>
+                                                    <div class="link">
+                                                        <span>Vous avez oubilé le mot de passe ?</span>
+                                                        <a href="">Récupérez-le</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="cart">
+                                        <i class="fas fa-shopping-cart"></i>  <br>
+                                        <span class="action-icon-txt">Panier</span>
+                                        <span class="cart-count">0</span>
+                                        
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 search-product">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Rechercher.." name="q" class="form-control">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header-nav for mobile version  -->
+
+
+        </div>
+        
+
+
+
+        <!-- start menu of categories for desktop version  -->
+        <div class="menu-categories d-sm-none d-none d-md-block">
+            <div class="container">
+                <ul>
+                    <li class="menu-item active"> 
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Intérieure</a>
+                    </li>
+                    <li class="menu-item" class='sub-menu-toggler'>
+                        <a href="">Extérieure <i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item" class='sub-menu-toggler'>
+                        <a href="">Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Marques</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end menu categories for desktop version  -->
+
+
+
+        <!-- start menu categories for mobile version  -->
+        <div class="sm-menu-categories">
+            <div class="container">
+                <ul class="sm-links-list">
+                    <li class="menu-item active"> 
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">INTÉRIEURE</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-menu-toggler" >EXTÉRIEURE  <i class="fas fa-angle-down"></i></a>
+                        <div class="sm-sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-menu-toggler">ACCESSOIRES  <i class="fas fa-angle-down"></i></a>
+                        <div class="sm-sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE  <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">MARQUES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end menu categories for mobile version  -->
+    </header>
+    <!-- end main navbar -->
+
+
+
+
+
+
+
+
+    <!-- start login page  -->
+    <div class="login my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img">
+                    <img src="imgs/login.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="container">
+                    <form action="" class="py-5">
+                        <div class="special-heading pb-4">Se connecter</div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Adresse Email">
+                        </div>
+                        <div class="form-group password-box">
+                            <input type="password" class="form-control" placeholder="Mot de passe">
+                            <span class="toggle-password">
+                                <i class="fas fa-eye" id="show"></i>
+                                <i class="fas fa-eye-slash d-none" id="hide"></i>
+                            </span>
+
+                        </div>
+                        <input type="submit" class="hvr-hang red-button" value="S'identifier">
+                        <div class="links py-4">
+                            <div class="link">
+                                <span>Vous avez oublié le mot de passe ? </span>
+                                <a href="">Récupérez-le</a>
+                            </div>
+                            <div class="link">
+                                <span>Vous n'avez pas de compte ? </span>
+                                <a href="registration.html">Inscrivez-vous</a>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end login page  -->
+
+
+
+    <!-- start footer  -->
+    <footer class="main-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <img src="../imgs/logo-white.png" alt="">
+                    </div>
+                    <div class="social-media-icons py-3">
+                        <a href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="links-title">Plus d'infos</div>
+                    <ul>
+                        <li><a href="">Le Règlement Général sur la Protection des Données ( RGPD )</a></li>
+                        <li><a href="../terms-of-use.html">Conditions d'utilisation</a></li>
+                        <li><a href="" id="interior-link" data-link="contacter">Contacter nous</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="links-title">Retrouvez-nous</div>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> &nbsp; 02.18.12.77.51</li>
+                        <li><i class="fas fa-envelope"></i> &nbsp; jewelsautodetailing@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> &nbsp; 20 Rue de la Baraudiere, 45700 Villemandeur. France</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    
+                    <map>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.953390789136!2d2.719487714987907!3d47.975959570383594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e57e0f11fa0e8f%3A0x4d79318252e7c9e0!2s20%20Rue%20de%20la%20Baraudi%C3%A8re%2C%2045700%20Villemandeur%2C%20France!5e0!3m2!1sfr!2sdz!4v1627369834544!5m2!1sfr!2sdz" height="200" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+                    </map>
+                </div>
+                
+            </div>
+        </div>
+        <hr style='background: rgb(77, 77, 77)'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="newsletter pb-4">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input type="email" name="subscribe-by-email" placeholder="Votre adresse email">  
+                                </div>
+                                <div class="col-4">
+                                    <button role="submit">S'abonner</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="copyright">
+                        Jewels Auto Detailing <script>document.write(new Date().getFullYear())</script>&copy; tous droits réservés
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
