@@ -93,12 +93,13 @@
             opacity: 0;
             transition: .3s ease-in-out; 
         }
-        &:not(.display-grid) &:hover {
+        &:not(.display-grid):hover {
             .button-cart {
                 visibility: visible;
                 opacity: 1;
             }
         }
+
         &.display-grid {
             margin: 15px 0;
         }

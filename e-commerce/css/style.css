@@ -609,7 +609,7 @@ header .sub-menu-block li a {
   opacity: 0;
   transition: .3s ease-in-out;
 }
-.products-list .product:not(.display-grid) .products-list .product:hover .button-cart {
+.products-list .product:not(.display-grid):hover .button-cart {
   visibility: visible;
   opacity: 1;
 }

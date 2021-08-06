@@ -1,0 +1,20 @@
+@import "../../css/_includes.scss";
+@import "../../css/_navbar.scss";
+@import "../../css/_main-footer.scss";
+@import "_main-header.scss";
+@import "_brands.scss";
+@import "_bottom-bar.scss";
+@import "_responsive.scss";
+@import "_products-list.scss";
+@import "_products-pagination.scss";
+
+
+
+.client-path {
+    font-size: 14px;
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(110, 110, 110) !important;
+    }
+}

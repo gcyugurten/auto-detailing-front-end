@@ -782,50 +782,13 @@ header .sub-menu-block li a {
   text-decoration: none !important;
 }
 
-.all-products .search-by-categories ul li {
-  list-style: none;
-  transition: .25s ease-in-out;
-  border-radius: 3px;
-  border-bottom: 1px solid #cacaca;
+.client-path {
+  font-size: 14px;
 }
-.all-products .search-by-categories ul li.active, .all-products .search-by-categories ul li:hover {
-  background-color: #fff;
-  padding-left: 12px;
-}
-.all-products .search-by-categories ul li.active {
-  box-shadow: 1px 2px 12px #e4e4e4;
-}
-.all-products .search-by-categories ul li a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 14.5px;
-  padding: 15px;
-  display: block;
-}
-.all-products .toolbar-filering-products {
-  background-color: #fff;
-  box-shadow: 1px 2px 12px #e4e4e4;
-  padding: 15px;
-  border-bottom: 1px solid #cacaca;
-  font-size: 13px;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-toggle {
-  text-decoration: none;
-  color: inherit;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu {
-  left: -50px !important;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu .dropdown-item {
-  padding: 10px 25px;
-  border-bottom: 1px solid #e4e4e4;
-  transition: .3s ease-in-out;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu .dropdown-item:last-child {
-  border-bottom: none;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu .dropdown-item:hover {
-  padding: 10px 30px !important;
+.client-path a {
+  display: inline-block;
+  padding: 0 7px;
+  color: #6e6e6e !important;
 }
 
-/*# sourceMappingURL=all-products.css.map */
+/*# sourceMappingURL=single-product.css.map */
