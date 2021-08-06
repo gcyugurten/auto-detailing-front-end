@@ -19,7 +19,37 @@
 </head>
 <body>
 
+
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "534337013677685");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v11.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
     
+
     <header>
 
         <!-- start upper bar (where we declare more information about shipping) -->
@@ -192,7 +222,7 @@
 
 
         <!-- start menu of categories for desktop version  -->
-        <div class="menu-categories d-sm-none d-none d-md-block" style="border-bottom: none">
+        <div class="menu-categories d-sm-none d-none d-md-block">
             <div class="container">
                 <ul>
                     <li class="menu-item active"> 
@@ -204,7 +234,7 @@
                     <li class="menu-item">
                         <a href="">Intérieure</a>
                     </li>
-                    <li class="menu-item" class='sub-menu-toggler'>
+                    <li class="menu-item sub-menu-toggler">
                         <a href="">Extérieure <i class="fas fa-angle-down"></i></a>
                         <div class="sub-menu-block">
                             <div class="row">
@@ -253,7 +283,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="menu-item" class='sub-menu-toggler'>
+                    <li class="menu-item sub-menu-toggler">
                         <a href="">Accessoires <i class="fas fa-angle-down"></i></a>
                         <div class="sub-menu-block">
                             <div class="row">
@@ -332,6 +362,9 @@
                 <ul class="sm-links-list">
                     <li class="menu-item active"> 
                         <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-item"> 
+                        <a href="index.html">Tous les produits</a>
                     </li>
                     <li class="menu-item">
                         <a href="">INTÉRIEURE</a>
@@ -457,7 +490,6 @@
         </div>
         <!-- end menu categories for mobile version  -->
     </header>
-
 
 
 
@@ -1243,6 +1275,132 @@
                     <!-- ----------------------------------------  -->
 
 
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="new">nouveau</span>
+                                <img src="uploads/products/4.png" alt="">
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="new">nouveau</span>
+                                <img src="uploads/products/4.png" alt="">
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="new">nouveau</span>
+                                <img src="uploads/products/4.png" alt="">
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <span class="new">nouveau</span>
+                                <img src="uploads/products/4.png" alt="">
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
                     
                     <!-- ----------------------------------------  -->
                     <div class="col-md-3 col-sm-4 col-6">
@@ -1459,9 +1617,41 @@
     <!-- end bottom bar  -->
 
 
+    
+    
+    
+    
+     <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- My Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "534337013677685");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 
-
+    
+    
 
     <!-- start footer  -->
     <footer class="main-footer pt-5">
@@ -1526,7 +1716,7 @@
                     <div class="pb-3">
                         <div class="links-title">produits</div>
                         <ul>
-                            <li><a href="">Tous les produits</a></li>
+                            <li><a href="all-products.html">Tous les produits</a></li>
                             <li><a href="">Nouveaux Produits</a></li>
                             <li><a href="">Les meilleures ventes</a></li>
                         </ul>

@@ -1,0 +1,29 @@
+
+
+
+// ------------------ start pagination products --------------
+.pagination {
+    text-align: center;
+    .page-item {
+        background-color: #fff;  
+        &:not(.disabled):hover, &.active {
+            a {
+                background-color: $mainColor;
+                color: #fff;
+                border-color: transparent !important;
+
+            }
+        }
+        a, span {
+            transition: .2s ease-in-out;
+            padding: 13px 15px;
+            display: inline-block;
+            font-size: 14px;
+            color: inherit ;
+            font-weight: 500;
+            text-decoration: none !important;
+        }
+         
+    }
+}
+// ------------------ end pagination products --------------

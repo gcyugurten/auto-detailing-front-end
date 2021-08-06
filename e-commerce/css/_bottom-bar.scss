@@ -1,0 +1,59 @@
+
+// --------------------------- start bottom bar -----------------
+.bottom-bar {
+    .heading {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 15px 0;
+    }
+    .caption {
+        font-size: 14px;
+    }
+    .icons {
+        a {
+            text-decoration: none !important;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            display: inline-block;
+            text-align: center;
+            transition: .2s ease-in-out;
+            i {
+                color: #fff;
+                line-height: 40px;
+                font-size: 20px;
+            }
+            &.bg-fb {
+                background-color: rgb(34, 99, 219);
+                &:hover {
+                    background-color: rgb(71, 127, 231);
+                }
+            }
+            &.bg-instagram {
+                background-color: rgb(185, 52, 103);
+                &:hover {
+                    background-color: rgb(192, 76, 120);
+                }
+            }
+            &.bg-twitter {
+                background-color: rgb(60, 168, 240);
+                &:hover {
+                    background-color: rgb(115, 191, 241);
+                }
+            }
+            &.bg-ytb {
+                background-color: rgb(168, 41, 51);
+                &:hover {
+                    background-color: rgb(202, 69, 82);
+                }
+            }
+        }
+    }
+    .form-control {
+        padding: 22px 15px;
+    }
+}
+// --------------------------- end bottom bar -----------------

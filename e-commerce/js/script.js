@@ -117,12 +117,13 @@ $(document).ready(function() {
 
         var st = $(this).scrollTop();
 
-        if($(window).scrollTop() > 200) {
+        if($(window).scrollTop() > 50) {
             if (st > lastScrollTop){
                 $('header').removeClass('fixed-header')
                 $('header').css('display', 'none')
             } else {
                 $('header').fadeIn(300).addClass('fixed-header')
+                $('header').css('display', 'block')
             }
             lastScrollTop = st;
 

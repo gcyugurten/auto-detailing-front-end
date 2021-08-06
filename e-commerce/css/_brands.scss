@@ -1,0 +1,37 @@
+
+
+// -------------------------- start brands ----------------
+.brands {
+    .brand-box {
+        .brand-item {
+            height: 150px;
+            border-bottom: 1px solid #d4d4d4;
+            border-right: 1px solid #d4d4d4;
+            position: relative;
+            img {
+                position: absolute;
+                width: 70px;
+                max-height: 120px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:last-child {
+                border-bottom: 1px solid transparent;
+            }
+            
+  
+        }
+        &:last-child {
+            .brand-item {
+                border-right: 1px solid transparent;
+            }
+        }
+
+    }
+    .row .col-6 {
+        padding-right: 0 !important; 
+        padding-left: 0 !important;
+    }
+}
+// -------------------------- end brands ----------------
