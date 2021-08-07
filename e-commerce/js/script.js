@@ -117,13 +117,11 @@ $(document).ready(function() {
 
         var st = $(this).scrollTop();
 
-        if($(window).scrollTop() > 50) {
+        if($(window).scrollTop() > 250) {
             if (st > lastScrollTop){
                 $('header').removeClass('fixed-header')
-                $('header').css('display', 'none')
             } else {
                 $('header').fadeIn(300).addClass('fixed-header')
-                $('header').css('display', 'block')
             }
             lastScrollTop = st;
 
@@ -135,6 +133,26 @@ $(document).ready(function() {
    
     })
 
+
+
+
+
+
+
+
+    // start signle product page functions
+    $('.product-page .gallery img').click(function() {
+        $('.main-img img').attr('src', $(this).attr('src'))
+        $('.main-img img').attr('xoriginal', $(this).attr('src'))
+
+        $('.product-page .gallery img').removeClass('active')
+        $(this).addClass('active')
+    })
+    
+    $(".main-img img").xzoom();
+    $('.xzoom-thumbs a').click(function(e) {
+        e.preventDefault()
+    })
 
 
 

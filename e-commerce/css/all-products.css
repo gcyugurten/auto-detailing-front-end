@@ -610,6 +610,15 @@ header .sub-menu-block li a {
   .all-products .search-by-categories {
     display: none;
   }
+
+  .products-list .owl-carousel .product-img {
+    height: 350px !important;
+  }
+
+  .product-page .product-details .gallery img {
+    width: 100px !important;
+    float: left;
+  }
 }
 @media (max-width: 992px) {
   .md-header-nav .action-list, .sm-header-nav .action-list {
@@ -780,6 +789,16 @@ header .sub-menu-block li a {
   color: inherit;
   font-weight: 500;
   text-decoration: none !important;
+}
+
+.client-path {
+  font-size: 14px;
+  border-bottom: 1px solid #919191;
+}
+.client-path a {
+  display: inline-block;
+  padding: 0 7px;
+  color: #464646 !important;
 }
 
 .all-products .search-by-categories ul li {

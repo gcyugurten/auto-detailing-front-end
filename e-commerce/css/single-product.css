@@ -610,6 +610,15 @@ header .sub-menu-block li a {
   .all-products .search-by-categories {
     display: none;
   }
+
+  .products-list .owl-carousel .product-img {
+    height: 350px !important;
+  }
+
+  .product-page .product-details .gallery img {
+    width: 100px !important;
+    float: left;
+  }
 }
 @media (max-width: 992px) {
   .md-header-nav .action-list, .sm-header-nav .action-list {
@@ -788,7 +797,84 @@ header .sub-menu-block li a {
 .client-path a {
   display: inline-block;
   padding: 0 7px;
-  color: #6e6e6e !important;
+  color: #464646 !important;
+}
+
+.product-page .gallery img {
+  padding: 5px;
+  max-width: 90px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.product-page .gallery img.active {
+  border: 2px solid #bb2828;
+  border-radius: 5px;
+}
+.product-page .rating i {
+  font-size: 13px;
+  color: #f6ca08;
+}
+.product-page .share .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  transition: .2s ease-in-out;
+}
+.product-page .share .icon i {
+  color: #fff;
+  line-height: 40px;
+  font-size: 20px;
+}
+.product-page .share .icon.bg-fb {
+  background-color: #2263db;
+}
+.product-page .share .icon.bg-fb:hover {
+  background-color: #477fe7;
+}
+.product-page .share .icon.bg-pinterest {
+  background-color: #b93467;
+}
+.product-page .share .icon.bg-pinterest:hover {
+  background-color: #c04c78;
+}
+.product-page .share .icon.bg-twitter {
+  background-color: #3ca8f0;
+}
+.product-page .share .icon.bg-twitter:hover {
+  background-color: #73bff1;
+}
+.product-page .heading {
+  font-size: 17px;
+  font-weight: bolder;
+  color: #141414;
+  font-family: 'Rubik';
+}
+.product-page .price .value {
+  font-size: 25px;
+  font-family: 'Rubik';
+  font-weight: bolder;
+  color: #bb2828;
+}
+.product-page .quantity select {
+  padding: 5px 15px;
+  border-radius: 3px;
+  background: none;
+}
+.product-page .testimonials {
+  width: 75%;
+  margin: auto;
+}
+.product-page .testimonials .comments .comment .name {
+  font-size: 20px;
+  font-family: "Rubik";
+  font-weight: bolder;
+  color: #464646;
+  float: left;
+}
+.product-page .testimonials .comments .comment .rating {
+  transform: translate(13px, -8px);
 }
 
 /*# sourceMappingURL=single-product.css.map */

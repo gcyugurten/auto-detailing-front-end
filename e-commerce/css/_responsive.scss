@@ -46,8 +46,24 @@
     .all-products .search-by-categories {
         display: none;
     }
+    .products-list .owl-carousel .product-img {
+        height: 350px !important;
+    }
 
 
+
+
+    // single page product 
+    .product-page {
+        .product-details {
+            .gallery {
+                img {
+                    width: 100px !important;
+                    float: left;
+                }
+            }
+        }
+    }
 }
 
 
