@@ -1,0 +1,113 @@
+@import "../includes/_includes.scss";
+@import "../includes/_main-footer.scss";
+@import "includes/_main-header.scss";
+@import "includes/_brands.scss";
+@import "includes/_bottom-bar.scss";
+@import "includes/_responsive.scss";
+@import "includes/_products-list.scss";
+@import "includes/_products-pagination.scss";
+
+
+
+
+.client-path {
+    font-size: 14px;
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(70, 70, 70) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+.profile {
+    .avatar {
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+    .uid {
+        text-align: center;
+        font-size: 15px;
+        color: rgb(117, 117, 117);
+        font-weight: bold;
+        padding: 5px 0;
+        font-family: "Rubik";
+    }
+    .personal-informations {
+        label {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+            color: rgb(112, 112, 112);
+        }
+    }
+
+
+    .orders {
+        .order-box {
+            th {
+                text-transform: capitalize;
+            }
+            .product-title {
+                font-size: 15px;
+                font-weight: 800;
+                a {
+                    color: inherit !important;
+                }
+
+            }
+            .unit-price {
+                color: $mainColor;
+                font-weight: bold;
+                font-size: 17px;
+            }
+            .quantity {
+                font-weight: bold;
+                font-size: 19px;
+                span {
+                    color: rgb(122, 122, 122);
+                    font-size: 12.5px;
+                    font-style: italic;
+                }
+            }
+            .total-price {
+                color: rgb(223, 11, 64);
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .order-products {
+                li {
+                    color: rgb(109, 109, 109);
+                    a {
+                        color: inherit;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .delivried {
+                color: green;
+                font-weight: 850;
+            }
+            .pending {
+                color: rgb(78, 93, 180);
+                font-weight: 850;
+            }
+            .date {
+                font-weight: bold;
+                
+            }
+        }
+    }
+
+
+}

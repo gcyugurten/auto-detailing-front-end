@@ -1,0 +1,63 @@
+@import "../includes/_includes.scss";
+@import "../includes/_navbar.scss";
+@import "../includes/_main-footer.scss";
+@import "includes/_main-header.scss";
+@import "includes/_brands.scss";
+@import "includes/_bottom-bar.scss";
+@import "includes/_responsive.scss";
+@import "includes/_products-list.scss";
+@import "includes/_products-pagination.scss";
+
+.client-path {
+    font-size: 14px;
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(70, 70, 70) !important;
+    }
+}
+
+.cart {
+    .product-title {
+        font-size: 18px;
+        font-weight: bolder;
+        font-family: "Rubik";
+    }
+    select[name="quantity"] {
+        padding: 5px 15px;
+        border: 1px solid rgb(189, 189, 189);
+        border-radius: 3px;
+    }
+    .total-price, .unit-price {
+        font-size: 20px;
+        color: $mainColor;
+        font-weight: bold;
+    }
+    table {
+        border-color: #ebebeb !important;
+        * {
+            border-color: #ebebeb !important;
+        }
+        tr {
+            td, th {
+                &:first-child {
+                    width: 60% !important;
+                }
+                width: 16%;
+            }
+            
+            border-color: #f1f1f1 !important;
+
+        }
+        a {
+            color: rgb(82, 82, 82) !important;
+            transition: .3s ease-in-out;
+            display: inline-block;
+           
+        }
+    }
+    .shipping {
+        font-size: 14px;
+        color: rgb(122, 122, 122);
+    }
+}

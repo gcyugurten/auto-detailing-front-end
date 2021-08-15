@@ -1,0 +1,118 @@
+@import "../includes/_includes.scss";
+@import "../includes/_main-footer.scss";
+@import "includes/_main-header.scss";
+@import "includes/_brands.scss";
+@import "includes/_bottom-bar.scss";
+@import "includes/_responsive.scss";
+@import "includes/_products-list.scss";
+@import "includes/_products-pagination.scss";
+
+
+
+
+.client-path {
+    font-size: 14px;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(70, 70, 70) !important;
+    }
+}
+
+
+
+
+
+
+
+.all-products {
+
+    .search-by-categories {
+        > ul {
+            > li {
+                border-bottom: 1px solid #cacaca;
+                a {
+                    padding: 15px;
+                    transition: .3s ease-in-out;
+                }
+                &.active, &:hover a {
+                    padding-left: 20px;
+                }
+
+            }
+        }
+        ul {
+            li {
+                list-style: none;
+                transition: .25s ease-in-out;
+                border-radius: 3px; 
+
+               
+                &.active {
+                    box-shadow: 1px 2px 12px #e4e4e4;
+                    background-color: #fff;
+
+                }
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    font-size: 14.5px;
+                    display: block;
+                }
+            }
+        }
+        .sub-menu {
+            display: none;
+            background-color: #f1f1f1;
+            // padding: 5px 15px;
+            li {
+                padding: 0px 20px;
+                &:hover {
+                    background-color: #fff;
+                    
+                    
+                }
+                ul li {
+                    background-color: #fff;
+                    &:hover {
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+
+
+    .toolbar-filering-products {
+        background-color: #fff;
+        box-shadow: 1px 2px 12px #e4e4e4;
+        padding: 15px;
+        border-bottom: 1px solid #cacaca;
+        font-size: 13px;
+        .dropdown {
+            .dropdown-toggle {
+                text-decoration: none;
+                color: inherit;
+            }
+            .dropdown-menu {
+                left: -50px !important;
+                .dropdown-item {
+                    padding: 10px 25px;
+                    border-bottom: 1px solid #e4e4e4;
+                    transition: .3s ease-in-out;
+                    &:last-child {
+                        border-bottom: none ;
+                    }
+                    &:hover {
+                        padding: 10px 30px !important;
+                    }
+                }
+            } 
+        }
+    }
+
+}

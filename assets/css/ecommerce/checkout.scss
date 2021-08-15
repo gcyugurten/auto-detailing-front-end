@@ -1,0 +1,147 @@
+@import "../includes/_includes.scss";
+@import "../includes/_navbar.scss";
+@import "../includes/_main-footer.scss";
+@import "includes/_main-header.scss";
+@import "includes/_brands.scss";
+@import "includes/_bottom-bar.scss";
+@import "includes/_responsive.scss";
+@import "includes/_products-list.scss";
+@import "includes/_products-pagination.scss";
+
+
+
+.client-path {
+    font-size: 14px;
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(70, 70, 70) !important;
+    }
+}
+
+
+
+
+
+.checkout {
+    
+    .form-control {
+        padding: 25px 15px !important;
+    }
+    
+    .shipping-mode {
+        padding: 25px 0;
+        cursor: pointer;
+        .form-group {
+            display: inline-block;
+            .shipping-details {
+                padding-left: 35px;
+                span i {
+                    padding-right: 5px;
+                    font-size: 25px;
+                    color: rgb(77, 77, 77);   
+                }
+                .delay {
+                    font-size: 14px;
+                    color: rgb(149, 149, 149);
+                    font-style: italic;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+    .payment {
+        input,textarea {
+            padding: 10px 15px 5px 15px;
+            border: none;
+            border: 1px solid lightgrey;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            margin-top: 2px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: arial;
+            color: #2C3E50;
+            font-size: 14px;
+            letter-spacing: 1px;
+            &:focus {
+                -moz-box-shadow: 0px 0px 0px 1.5px skyblue !important;
+                -webkit-box-shadow: 0px 0px 0px 1.5px skyblue !important;
+                box-shadow: 0px 0px 0px 1.5px skyblue !important;
+                font-weight: bold;
+                border: 1px solid #304FFE;
+                outline-width: 0
+            }
+        }
+        .input-group {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            input {
+                position: relative;
+                height: 80px;
+                margin-left: 1px;
+                margin-right: 1px;
+                border-radius: 6px;
+                padding-top: 30px;
+                padding-left: 25px;              
+            }
+            label {
+                position: absolute;
+                height: 24px;
+                background: none;
+                border-radius: 6px;
+                line-height: 48px;
+                font-family: 'Poppins';
+                font-size: 14px;
+                color: rgb(161, 161, 161) !important;
+                width: 100%;
+                font-weight: 100;
+                padding-left: 25px
+            }
+        }
+        
+
+        
+
+        .border-bottom {
+            border-color: rgb(194, 194, 194) !important;
+        }
+        
+    }
+
+    
+
+    
+    .checkout-billing {
+        &.fixed {
+            position: fixed;
+            top: 10px;
+            z-index: 9999;
+        }
+        .articles_count {
+            font-size: 15px;
+            font-style: italic;
+            font-weight: bolder;
+            color: rgb(136, 136, 136);
+        }
+
+        .heading {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(87, 87, 87);
+        }
+        .value {
+            font-size: 21px;
+            font-weight: bold;
+            transform: translateY(-5px);           
+        }
+        .total-price .value {
+            font-size: 28px;
+        }
+        .value-txt {
+            font-size: 14px;
+            color: rgb(107, 107, 107)
+        }
+    }
+}

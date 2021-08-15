@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/imgs/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/ecommerce/style.css">
+
+    <title>Jewels Boutique | Jewels Auto Detailing</title>
+</head>
+<body>
+
+
+
+    <header>
+
+        <!-- start upper bar (where we declare more information about shipping) -->
+        <div class="upper-bar font-weight-bold text-center">
+            Livraison Gratuite pour les commandes +130€. &nbsp; <u><a href="">Cliquez ici pour en savoir plus</a></u>
+        </div>
+        <!-- end upper bar -->
+
+
+
+        <div class="header-nav py-4">
+
+            
+            <!-- header nav (logo + search field + icons on right) for desktop version  -->
+            <div class="md-header-nav d-md-block d-sm-none d-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-3">
+                            <a class="header-brand" href="#">
+                                <img src="assets/imgs/logo-black.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-6 search-product">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Rechercher.." name="q" class="form-control">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col col-sm-3">
+                            <ul class="action-list">
+                                <li>
+                                    <div class="dropdown">
+                                        <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-user"></i>  <br>
+                                            <span class="action-icon-txt">Mon compte</span>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <h6 class="text-center dropdown-header pt-3">Se connecter</h6>
+                                            <form class="px-3 py-3">
+                                                <div class="form-group">
+                                                    <label for="email">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Address Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Mot de passe</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                                                </div>
+                                                
+                                                <button type="submit" class="red-button">Se connecter</button>
+                                                <div class="links py-2">
+                                                    <div class="link">
+                                                        <span>Vous n'avez pas de compte ?</span>
+                                                        <a href="registration.html">Inscrivez-vous</a>
+                                                    </div>
+                                                    <div class="link">
+                                                        <span>Vous avez oubilé le mot de passe ?</span>
+                                                        <a href="">Récupérez-le</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="cart.html" class="cart">
+                                        <i class="fas fa-shopping-cart"></i>  <br>
+                                        <span class="action-icon-txt">Panier</span>
+                                        <span class="cart-count">0</span>
+                                        
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header nav (logo + search field + icons on right) for desktop version  -->
+
+
+            <!-- start header nav (logo + search field + icons on right) for mobile version  -->
+            <div class="sm-header-nav d-md-none d-sm-block d-block">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-2">
+                            <div class="categories-toggler">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-5 text-center">
+                            <a class="header-brand" href="#">
+                                <img src="assets/imgs/logo-black.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="col-5">
+                            <ul class="action-list">
+
+                                <li>
+                                    <div class="dropdown">
+                                        <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-user"></i>  <br>
+                                            <span class="action-icon-txt">Mon compte</span>
+                                        </a>
+                                        <div class="dropdown-menu" id="dropdown-login">
+                                            <h6 class="text-center dropdown-header pt-3">Se connecter</h6>
+                                            <form class="px-3 py-3">
+                                                <div class="form-group">
+                                                    <label>Email address</label>
+                                                    <input type="email" class="form-control" placeholder="Address Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Mot de passe</label>
+                                                    <input type="password" class="form-control" placeholder="Mot de passe">
+                                                </div>
+                                                
+                                                <button type="submit" class="red-button">Sign in</button>
+                                                <div class="links py-2">
+                                                    <div class="link">
+                                                        <span>Vous n'avez pas de compte ?</span>
+                                                        <a href="">Inscrivez-vous</a>
+                                                    </div>
+                                                    <div class="link">
+                                                        <span>Vous avez oubilé le mot de passe ?</span>
+                                                        <a href="">Récupérez-le</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="cart.html" class="cart">
+                                        <i class="fas fa-shopping-cart"></i>  <br>
+                                        <span class="action-icon-txt">Panier</span>
+                                        <span class="cart-count">0</span>
+                                        
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 search-product">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Rechercher.." name="q" class="form-control">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header-nav (logo + search field + icons on right) for mobile version  -->
+        </div>
+
+        
+
+
+
+        <!-- start menu of categories for desktop version  -->
+        <div class="menu-categories d-sm-none d-none d-md-block">
+            <div class="my-container">
+                <ul>
+                    <li class="menu-item active"> 
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="all-products.html">Tous les produits</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Intérieure</a>
+                    </li>
+                    <li class="menu-item sub-menu-toggler">
+                        <a href="">Extérieure <i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item sub-menu-toggler">
+                        <a href="">Accessoires <i class="fas fa-angle-down"></i></a>
+                        <div class="sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">Marques</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html">Nos services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end menu categories for desktop version  -->
+
+
+
+        <!-- start menu categories for mobile version  -->
+        <div class="sm-menu-categories">
+            <div class="container">
+                <ul class="sm-links-list">
+                    <li class="menu-item active"> 
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="menu-item"> 
+                        <a href="index.html">Tous les produits</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">INTÉRIEURE</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-menu-toggler" >EXTÉRIEURE  <i class="fas fa-angle-down"></i></a>
+                        <div class="sm-sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-menu-toggler">ACCESSOIRES  <i class="fas fa-angle-down"></i></a>
+                        <div class="sm-sub-menu-block">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE  <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="subcat-heading">PRÉLAVAGE <i class="fas fa-angle-down"></i></h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">Canon à mousse (foam lance)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Mousse de pré-lavage (snow foam)</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Accessoires Pré-lavage</a>
+                                        </li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">MARQUES</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html">Nos services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end menu categories for mobile version  -->
+    </header>
+
+
+
+   
+
+
+    <!-- start header slideshow -->
+    <section class="header-slideshow" >
+        <div id="header-carousel" data-interval="2000" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/imgs/car1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h5>Bénificiez des bons prix avec bla bla produit detailing</h5>
+                        <p class="d-none d-md-block">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/car2.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h5>Bénificiez des bons prix avec bla bla produit detailing</h5>
+                        <p class="d-none d-md-block">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita asperiores dolores ullam 
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/car1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h5>Bénificiez des bons prix avec bla bla produit detailing</h5>
+                        <p class="d-none d-md-block">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita 
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+       
+    </section>
+    <!-- end header slideshow  -->
+
+
+
+
+
+
+    <!-- start website features -->
+    <section class="website-features py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div class="img">
+                            <img src="assets/imgs/free-shipping-vector.png" alt="">
+                        </div>
+                        <h3 class="heading">Livraison Gratuite</h3>
+                        <p class="caption">
+                            Pour les commandes <b style="font-size: 17px;">€130+</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div class="img">
+                            <img src="assets/imgs/support.png" alt="">
+                        </div>
+                        <h3 class="heading">Assistance 24h/24</h3>
+                        <p class="caption">
+                            Soyez alése. Nous sommes la pour vous aider a tous moments
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="feature">
+                        <div class="img">
+                            <img src="assets/imgs/refund.png" alt="">
+                        </div>
+                        <h3 class="heading">Remboursement</h3>
+                        <p class="caption">
+                            Si vous n'êtes pas heureux, nous non plus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end website features -->
+
+
+
+
+
+
+
+    <div class="new-products bg-light py-5">
+        <div class="my-container">
+            <h1 class="special-heading pb-3">Nouveaux produits</h1>
+            <div class="products-list">
+
+
+                <div class="owl-carousel">
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/product.jpg" alt="">
+                                <img class="second-img" src="assets/imgs/products/4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+                    
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>   
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/4.png" alt="">
+                                <img class="second-img" src="assets/imgs/products/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>  
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <img src="assets/imgs/products/5.png" alt="">
+                                <span class="new">nouveau</span>
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/6.jpg" alt="">
+                                <img class="second-img" src="assets/imgs/products/2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/7.png" alt="">
+                                <img class="second-img" src="assets/imgs/products/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>           
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- start new products  -->
+    <div class="py-5 new-products">
+        <div class="my-container">
+            <h1 class="special-heading pb-3">Best-seller de cette semaine</h1>
+            <div class="products-list">
+                <div class="owl-carousel">
+
+
+                    <!-- ------------------------------------- -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/product.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div> 
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------- -->
+                    
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+                    
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/3.jpg" alt="">
+                                <img class="second-img" src="assets/imgs/products/product.jpg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>        
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/5.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>             
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>                            
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="product">
+                        <div class="product-img">
+                            <a href="product.html">
+                                <span class="new">nouveau</span>
+                                <img src="assets/imgs/products/7.png" alt="">
+                            </a>
+                        </div>
+                        <div class="product-infos">
+                            <a class="category" href="">Extérieure</a>
+                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                            <div class="rating">
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                                <i class="fas fa-star star-y"></i>
+                            </div>
+                            <div class="prices pb-3">
+                                <span class="last-price">238 €</span>
+                                <span class="cur-price">119 €</span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="button-cart">
+                            <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                        </div>
+                    </div>   
+                    <!-- ----------------------------------------  -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end new products  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start random products  -->
+    <div class="bg-light py-5">
+        <div class="my-container">
+            <h1 class="special-heading text-center pb-3">C'est peut-être ce que vous cherchez</h1>
+            <div class="products-list">
+                <div class="row">
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+                   
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/5.png" alt="">
+                                    <img class="second-img" src="assets/imgs/products/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>                     
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/7.png" alt="">
+                                    <img class="second-img" src="assets/imgs/products/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>                              
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/2.png" alt="">
+                                    <img class="second-img" src="assets/imgs/products/6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>                                
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+                    
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>   
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>    
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+                    
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/5.png" alt="">
+                                    <img class="second-img" src="assets/imgs/products/product.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>  
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+
+
+                    <!-- ----------------------------------------  -->
+                    <div class="col-md-3 col-sm-4 col-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <a href="product.html">
+                                    <span class="new">nouveau</span>
+                                    <img src="assets/imgs/products/7.png" alt="">
+                                </a>
+                            </div>
+                            <div class="product-infos">
+                                <a class="category" href="">Extérieure</a>
+                                <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                <div class="rating">
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                    <i class="fas fa-star star-y"></i>
+                                </div>
+                                <div class="prices pb-3">
+                                    <span class="last-price">238 €</span>
+                                    <span class="cur-price">119 €</span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="button-cart">
+                                <a href="" class="btn-block text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------  -->
+
+                </div>
+            </div>
+
+
+            <!-- start pagination products -->
+            <nav class="py-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i> &nbsp; Précédent</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">...</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Suivant &nbsp; <i class="fas fa-angle-right"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end pagination products  -->
+        </div>
+    </div>
+    <!-- end random products  -->
+
+
+
+
+
+    <!-- start brands used -->
+    <div class="brands py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/iglcoating.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/hp.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/volkswagen.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/nike.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/audi.png" alt="">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/adidas.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/kia.png" alt="">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/maxipower.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/iglcoating.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/hp.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/volkswagen.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/nike.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end brands used -->
+
+
+
+
+
+    <!-- start bottom bar ( where i putted the newsletter form and the social media icons  ) -->
+    <div class="bottom-bar bg-gray py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 pb-5">
+                    <div class="heading">Retrouvez nous</div>
+                    <p class="caption">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officiis molestiae aperiam
+                    </p>
+                    <div class="icons">
+                        <a href="">
+                            <div class="icon bg-fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon bg-instagram">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon bg-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="icon bg-ytb">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="newsletter">
+                        <div class="heading">REJOIGNEZ NOTRE NEWSLETTER</div>
+                        <p class="caption">Rejoignez nous et soyez les premiers a obtenir nos nouvelles offres</p>
+                        <form action="" >
+                            <div class="form-group newsletter-subscribe">
+                                <input type="text" placeholder="Vore email" name="email" class="form-control">
+                                <button type="submit" class="red-button">S'abonner</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end bottom bar  -->
+
+
+    
+    
+    
+    
+     <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- My Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "534337013677685");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+    
+    
+
+    <!-- start footer  -->
+    <footer class="main-footer pt-5">
+        <div class="container">
+
+            <div class="logo text-center">
+                <img src="assets/imgs/logo-white.png" alt="">
+            </div>
+
+            <div class="py-5 footer-features">
+                <div class="row">
+
+                    <div class="col-md-3 col-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="heading">Livraison Gratuite</div>
+                            <div class="caption">Pour les commandes <b>+130€</b></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+                            <div class="heading">Paiment Sécurisé</div>
+                            <div class="caption">100% Paiment sécurisé</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="far fa-handshake"></i>
+                            </div>
+                            <div class="heading">Acheter en toute confiance</div>
+                            <div class="caption">Si les produits ont des problèmes</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <div class="feature">
+                            <div class="icon">
+                                <i class="far fa-comments"></i>
+                            </div>
+                            <div class="heading">Support 24h/24 7j/7</div>
+                            <div class="caption">Assistance dédiée 24h/24 et 7j/7</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr style="background: rgb(59, 59, 59)">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    
+
+                    <div class="pb-3">
+                        <div class="links-title">produits</div>
+                        <ul>
+                            <li><a href="all-products.html">Tous les produits</a></li>
+                            <li><a href="">Nouveaux Produits</a></li>
+                            <li><a href="">Les meilleures ventes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-title">Service Client</div>
+                    <ul>
+                        <li><a href="">Se connecter</a></li>
+                        <li><a href="">Créer un compte</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="links-title">Plus d'infos</div>
+                    <ul>
+                        <li><a href="">Qui sommes-nous ?</a></li>
+                        <li><a href="">Livraison</a></li>
+                        <li><a href="">Conditions d'utilisation</a></li>
+                        <li><a href="">Paiments</a></li>
+                        <li><a href="">Plan du site</a></li>
+                        <li><a href="">Nous contacter</a></li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="links-title">Retrouvez-nous</div>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> &nbsp; 02.18.12.77.51</li>
+                        <li><i class="fas fa-envelope"></i> &nbsp; jewelsautodetailing@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> &nbsp; 20 Rue de la Baraudiere, 45700 Villemandeur. France</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    
+                    <map>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.953390789136!2d2.719487714987907!3d47.975959570383594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e57e0f11fa0e8f%3A0x4d79318252e7c9e0!2s20%20Rue%20de%20la%20Baraudi%C3%A8re%2C%2045700%20Villemandeur%2C%20France!5e0!3m2!1sfr!2sdz!4v1627369834544!5m2!1sfr!2sdz" height="200" style="border:0; width: 100%" allowfullscreen="" loading="lazy"></iframe>
+                    </map>
+                </div>
+                
+            </div>
+        </div>
+        <hr style='background: rgb(77, 77, 77)'>
+        <div class="container pb-2">
+            <div class="copyright">
+                <div class="float-left">
+                    <b>Jewels Auto Detailing</b> <script>document.write(new Date().getFullYear())</script>&copy; tous droits réservés
+                </div>
+                <div class="float-right">
+                    Développé par <a target="_blank" href="https://www.facebook.com/jigou.gc.1/">Gaci Jugurtha</a> & <a target="_blank" href="https://www.facebook.com/walid.hun">Walid Hun</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>        
+        </div>
+    </footer>
+    <!-- end footer  -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/ecommerce/script.js"></script>
+</body>
+</html>

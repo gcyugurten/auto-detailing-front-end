@@ -1,0 +1,166 @@
+@import "../includes/_includes.scss";
+@import "../includes/_main-footer.scss";
+@import "includes/_main-header.scss";
+@import "includes/_brands.scss";
+@import "includes/_products-list.scss";
+@import "includes/_bottom-bar.scss";
+@import "includes/_products-pagination.scss";
+@import "includes/_responsive.scss";
+
+.form-control {
+    border: 1px solid #dbdbdb;
+    border-radius: 2px !important;
+    font-size: 14px;
+}
+
+// ------------------- start login and registartion pages
+.login, .registration  {
+    margin: auto;
+    border: 1px solid #ccc;
+    width: 80%;
+    box-shadow: -1px 1px 17px #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    form input:not([type="submit"]) {
+        padding: 25px 10px !important;
+    }
+    .img {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            min-width: 100%;
+        }
+    }
+    .password-box {
+        position: relative;
+        span.toggle-password {
+            i {
+                position: absolute;
+                transform: translateY(-35px);
+                right: 15px;
+                font-size: 20px;
+                color: rgb(80, 80, 80);
+                cursor: pointer;
+            }
+        }
+    }
+}
+// ------------------- end login and registartion pages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-slideshow .carousel {
+    height: 350px;
+    overflow: hidden;
+    background-color: #000;
+    img {
+        min-width: 100%;
+        height: 100%;
+        opacity: .65;
+    }
+    .carousel-caption {
+        top: 50px;
+        bottom: inherit !important;
+        h5 {
+            font-size: 48px;
+            font-family: "Montserrat";
+            font-weight: 900;
+        }
+        p {
+            padding-top: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            font-size: 15px;
+            font-style: italic;
+        }
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+// ------------------------- end home page -------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------- start website features  ----- 
+.website-features {
+    .feature {
+        text-align: center;
+        img {
+            height: 100px;
+        }
+        h3 {
+            font-size: 20px;
+            font-family: "Rubik";
+            padding: 15px 0;
+        }
+        p {
+            font-size: 13px !important;
+            line-height: 1.9 !important;
+        }
+    }
+}
+// ---------------------- end website features  ----- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
