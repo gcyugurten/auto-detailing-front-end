@@ -334,23 +334,34 @@ header .header-nav .action-list li .cart .cart-count {
   color: #fff;
   font-weight: bold;
 }
-header .header-nav .action-list li .dropdown-menu {
+header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu {
   width: 320px;
   left: -130px !important;
   box-shadow: -1px 2px 13px #acacac;
 }
-header .header-nav .action-list li .dropdown-menu .form-control {
+header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu .form-control {
   padding: 20px 15px;
 }
-header .header-nav .action-list li .dropdown-menu label {
+header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu label {
   font-size: 12px;
   font-weight: bold;
   margin: 0 !important;
 }
-header .header-nav .action-list li .dropdown-menu .links .link {
+header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu .links .link {
   font-size: 13px;
 }
-header .header-nav .dropdown:hover .dropdown-menu {
+header .header-nav .action-list li .dropdown.user-authed img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+header .header-nav .action-list li .dropdown.user-authed .dropdown-item {
+  font-size: 14px;
+}
+header .header-nav .action-list li .dropdown.user-authed .action-icon-txt {
+  font-weight: bold;
+}
+header .header-nav .dropdown:not(.user-authed):hover .dropdown-menu {
   display: block;
   margin-top: 0;
 }
@@ -379,7 +390,7 @@ header .menu-categories ul .menu-item.active {
 header .menu-categories ul .menu-item.active a, header .menu-categories ul .menu-item.active a i {
   color: #fff;
 }
-header .menu-categories ul .menu-item.dropdown:hover > .dropdown-menu, header .menu-categories ul .menu-item.dropleft:hover .dropdown-left {
+header .menu-categories ul .menu-item.dropdown:hover > .dropdown-menu {
   display: block !important;
   margin: 0;
 }
@@ -421,7 +432,7 @@ header .sm-menu-categories {
   top: 120px;
   background: #fff;
   display: none;
-  z-index: 99;
+  z-index: 9999;
 }
 header .sm-menu-categories .sm-links-list {
   border: 1px solid #ccc;
@@ -466,7 +477,7 @@ header .sub-menu-block {
   opacity: 0;
   transition: .15s ease-in-out;
   background-color: #fff;
-  z-index: 999;
+  z-index: 9999999;
   margin-top: 20px;
   visibility: hidden;
 }

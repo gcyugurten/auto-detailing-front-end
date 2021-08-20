@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/ecommerce/cart.css">
+    <link rel="stylesheet" href="assets/css/ecommerce/all-products.css">
 
-
-    <title>Jewels Boutique | Single product page</title>
+    <title>Jewels Boutique | Jewels Auto Detailing</title>
 </head>
 <body>
 
-
+    
     <header>
 
         <!-- start upper bar (where we declare more information about shipping) -->
@@ -40,7 +39,7 @@
                     <div class="row">
                         <div class="col col-sm-3">
                             <a class="header-brand" href="#">
-                                <img src="assets/imgs/logo-black.png" alt="">
+                                <img src="../imgs/logo-black.png" alt="">
                             </a>
                         </div>
                         <div class="col-6 search-product">
@@ -120,7 +119,7 @@
 
                         <div class="col-5 text-center">
                             <a class="header-brand" href="#">
-                                <img src="assets/imgs/logo-black.png" alt="">
+                                <img src="../imgs/logo-black.png" alt="">
                             </a>
                         </div>
                         
@@ -199,7 +198,7 @@
                     <li class="menu-item"> 
                         <a href="ecommerce-index.html">Accueil</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                         <a href="all-products.html">Tous les produits</a>
                     </li>
                     <li class="menu-item">
@@ -335,9 +334,9 @@
             <div class="container">
                 <ul class="sm-links-list">
                     <li class="menu-item"> 
-                        <a href="ecommerce-index.html">Accueil</a>
+                        <a href="ecommerce.html">Accueil</a>
                     </li>
-                    <li class="menu-item"> 
+                    <li class="menu-item active"> 
                         <a href="all-products.html">Tous les produits</a>
                     </li>
                     <li class="menu-item">
@@ -457,7 +456,7 @@
                         </div>
                     </li>
                     <li class="menu-item">
-                        <a href="">Marques</a>
+                        <a href="">MARQUES</a>
                     </li>
                     <li class="menu-item">
                         <a href="index.html">Nos services</a>
@@ -472,134 +471,371 @@
 
 
 
-    <div class="cart">
-        <div class="client-path bg-light py-4">
-            <div class="container">
-                <a href="ecommerce-index.html">Home</a> / <a href="cart.html">Panier</a>
-            </div>
+    <div class="client-path bg-light py-4">
+        <div class="container">
+            <a href="ecommerce.html">Home</a> / <a href="all-products.html">Résultat de recherche</a> 
         </div>
-        <div class="container py-5">
-            <div class="special-heading pb-4 text-center text-sm-left">Mon Panier</div>
-            <form action="checkout.html">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="d-block d-sm-none py-4">
-                            <div class="cart-summary">
-                                <h1 class="float-left special-heading">Total à payer :</h1>
-                                <div class="float-right total-price" style="font-size: 28px">845 €</div>
-                                <div class="clearfix"></div>
-                                <div class="py-3 shipping">
-                                    <b>Frais de Livraison :</b>
-                                    calculé dans l'étape suivante
-                                </div> 
-                                <button type="submit" class="red-button btn-block py-3 mt-4 font-weight-bold">Commander</button>
-                            </div>
-                        </div>
-                        <div class="cart-wrapper">
-                            <table class="table border-left border-bottom border-right">
-                                <tr>
-                                    <th>Produit</th>
-                                    <th>Quantité</th>
-                                    <th>Total</th>
-                                    <td></td>
-                                </tr>
+    </div>
 
-                                <tr id="product">
-                                    <input type="hidden" name="product_id">
-                                    <td>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="product-img">
-                                                    <img class="w-100" src="assets/imgs/products/2.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <a href="product.html">
-                                                    <h1 class="product-title">TIRE SIO2 JANUS (dressing pneus nacré)</h1>
-                                                </a>
-                                                <div class="unit-price">
-                                                    32 €
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                        
-                                    </td>
-                                    
-                                    <td>
-                                        <select name="quantity" id="">
-                                            <script>
-                                                for(var i = 1; i < 11; i++) {
-                                                    document.write("<option value='"+ i +"'>"+ i +"</option>")                                                                    
-                                                }
-                                            </script>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <div class="total-price">204 €</div>
-                                    </td>        
-                                    <td>
-                                        <a href="" id="remove-product">
-                                            <i class="fas fa-times"></i>
-                                        </a> 
-                                    </td>
-                                </tr>
 
-                                <tr id="product_id">
-                                    <input type="hidden" name="product_id">
-                                    <td>
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="product-img">
-                                                    <img class="w-100" src="assets/products/2.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <a href="product.html">
-                                                    <h1 class="product-title">TIRE SIO2 JANUS (dressing pneus nacré)</h1>
-                                                </a>
-                                                <div class="unit-price">
-                                                    32 €
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </td>
-                                    
-                                    <td>
-                                        <select name="quantity" id="">
-                                            <script>
-                                                for(var i = 1; i < 11; i++) {
-                                                    document.write("<option value='"+ i +"'>"+ i +"</option>")                                                                    
-                                                }
-                                            </script>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <div class="total-price">204 €</div>
-                                    </td>       
-                                    <td>
-                                        <a href=""><i class="fas fa-times"></i></a> 
-                                    </td> 
-                                </tr>
+    <div class="all-products bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
 
-                            </table>
-                        </div>
+                    <div class="search-by-categories">
+                        <h1 class="special-heading pb-3" style="font-size:18px">Recherchez par catégories</h1>
+                        <ul>
+                            <li class="active">
+                                <a href="all-products.html">Tous les produits</a>
+                            </li>
+                            <li>
+                                <a href="">Intérieure</a>
+                            </li>
+                            <li>
+                                <a href="" id="menu-toggler">
+                                    <div class="float-left">Extérieure</div>
+                                    <div class="float-right"><i class="fas fa-angle-down"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="" id="menu-toggler">
+                                                <div class="float-left">Prélavage</div>
+                                                <div class="float-right"><i class="fas fa-angle-down"></i></div>
+                                                <div class="clearfix"></div>
+                                            </a>
+                                            <div class="sub-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="">
+                                                            Accessoires Pré-lavage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Accessoires Pré-lavage
+                                                        </a>
+                                                    </li> 
+                                                    <li>
+                                                        <a href="">
+                                                            Accessoires Pré-lavage
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">
+                                                            Accessoires Pré-lavage
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="">Prélavage</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Prélavage</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Prélavage</a>
+                                        </li>
+                                    </ul>
+                                </div>                                
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="float-left">Accessoires</div>
+                                    <div class="float-right"><i class="fas fa-angle-down"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-4">
-                        <div class="cart-summary d-none d-sm-block">
-                            <h1 class="float-left special-heading">Total à payer :</h1>
-                            <div class="float-right total-price" style="font-size: 28px">845 €</div>
-                            <div class="clearfix"></div>
-                            <div class="py-3 shipping">
-                                <b>Frais de Livraison :</b>
-                                calculé dans l'étape suivante
-                            </div> 
-                            <button type="submit" class="red-button btn-block py-3 mt-4 font-weight-bold">Commander</button>
+
+                </div>
+                <div class="col-md-8">
+                    <h1 class="special-heading pb-3">Résultat de recherche : <span style="font-size: 18px;">query</span></h1> <!-- show the category name if it's choosed -->
+                    <div class="toolbar-filering-products">
+                        <div class="float-left">Page <b>1</b> sur <b>593</b></div>
+                        <div class="float-right">
+                            
+                            <div class="dropdown">
+                                <a href="" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Trier par
+                                </a>
+                                <span>&nbsp; : Alphabet A-Z</span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Alphabet : A-Z</a>
+                                    <a class="dropdown-item" href="#">Alphabet : Z-A</a>
+                                    <a class="dropdown-item" href="#">Prix : le plus chér</a>
+                                    <a class="dropdown-item" href="#">Prix : le moins chér</a>
+
+                                </div>
+                              </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="products-list">
+                        <div class="bg-light my-3">
+
+                            <div class="product display-grid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="product-img">
+                                            <a href="product.html">
+                                                <span class="new">nouveau</span>
+                                                <img src="assets/imgs/products/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="product-infos">
+                                            <a class="category" href="">Extérieure</a>
+                                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                            <div class="rating">
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                            </div>
+                                            <div class="prices pb-3">
+                                                <span class="last-price">238 €</span>
+                                                <span class="cur-price">119 €</span>
+                                                <div class="clearfix"></div>
+                                            </div>    
+                                        </div>
+                                        <div class="button-cart">
+                                            <a href="" class=" text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                                            <a href="product.html" class="black-transparent-button my-2">Acheter maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="product display-grid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="product-img">
+                                            <a href="product.html">
+                                                <span class="new">nouveau</span>
+                                                <img src="assets/imgs/products/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="product-infos">
+                                            <a class="category" href="">Extérieure</a>
+                                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                            <div class="rating">
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                            </div>
+                                            <div class="prices pb-3">
+                                                <span class="last-price">238 €</span>
+                                                <span class="cur-price">119 €</span>
+                                                <div class="clearfix"></div>
+                                            </div>    
+                                        </div>
+                                        <div class="button-cart">
+                                            <a href="" class=" text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                                            <a href="product.html" class="black-transparent-button my-2">Acheter maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
+                            <div class="product display-grid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="product-img">
+                                            <a href="product.html">
+                                                <span class="new">nouveau</span>
+                                                <img src="assets/imgs/products/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="product-infos">
+                                            <a class="category" href="">Extérieure</a>
+                                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                            <div class="rating">
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                            </div>
+                                            <div class="prices pb-3">
+                                                <span class="last-price">238 €</span>
+                                                <span class="cur-price">119 €</span>
+                                                <div class="clearfix"></div>
+                                            </div>    
+                                        </div>
+                                        <div class="button-cart">
+                                            <a href="" class=" text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                                            <a href="product.html" class="black-transparent-button my-2">Acheter maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
+                            <div class="product display-grid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="product-img">
+                                            <a href="product.html">
+                                                <span class="new">nouveau</span>
+                                                <img src="assets/imgs/products/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="product-infos">
+                                            <a class="category" href="">Extérieure</a>
+                                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                            <div class="rating">
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                            </div>
+                                            <div class="prices pb-3">
+                                                <span class="last-price">238 €</span>
+                                                <span class="cur-price">119 €</span>
+                                                <div class="clearfix"></div>
+                                            </div>    
+                                        </div>
+                                        <div class="button-cart">
+                                            <a href="" class=" text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                                            <a href="product.html" class="black-transparent-button my-2">Acheter maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
+                            <div class="product display-grid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="product-img">
+                                            <a href="product.html">
+                                                <span class="new">nouveau</span>
+                                                <img src="assets/imgs/products/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="product-infos">
+                                            <a class="category" href="">Extérieure</a>
+                                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                            <div class="rating">
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                            </div>
+                                            <div class="prices pb-3">
+                                                <span class="last-price">238 €</span>
+                                                <span class="cur-price">119 €</span>
+                                                <div class="clearfix"></div>
+                                            </div>    
+                                        </div>
+                                        <div class="button-cart">
+                                            <a href="" class=" text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                                            <a href="product.html" class="black-transparent-button my-2">Acheter maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            
+                            <div class="product display-grid">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="product-img">
+                                            <a href="product.html">
+                                                <span class="new">nouveau</span>
+                                                <img src="assets/imgs/products/4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="product-infos">
+                                            <a class="category" href="">Extérieure</a>
+                                            <a href="product.html" class="title">TIRE SIO2 JANUS (dressing pneus nacré)</a>
+                                            <div class="rating">
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                                <i class="fas fa-star star-y"></i>
+                                            </div>
+                                            <div class="prices pb-3">
+                                                <span class="last-price">238 €</span>
+                                                <span class="cur-price">119 €</span>
+                                                <div class="clearfix"></div>
+                                            </div>    
+                                        </div>
+                                        <div class="button-cart">
+                                            <a href="" class=" text-center red-button"><i class="fas fa-shopping-cart"></i> &nbsp; Ajouter au panier</a>
+                                            <a href="product.html" class="black-transparent-button my-2">Acheter maintenant</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- start pagination products -->
+                            <nav class="py-4">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i> &nbsp; Précédent</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Suivant &nbsp; <i class="fas fa-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- end pagination products  -->
+
+
+                              
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -612,9 +848,76 @@
 
 
 
-   
+
+
+    <!-- start brands used -->
+    <div class="brands py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/iglcoating.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/hp.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/volkswagen.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/nike.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/audi.png" alt="">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/adidas.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/kia.png" alt="">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/maxipower.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/iglcoating.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/hp.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-2 brand-box text-center">
+                    <div class="brand-item">
+                        <img src="assets/imgs/brands/volkswagen.png" alt="">
+                    </div>
+                    <div class="brand-item border-sm-bottom">
+                        <img src="assets/imgs/brands/nike.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end brands used -->
+
+
+
+
+
     <!-- start bottom bar ( where i putted the newsletter form and the social media icons  ) -->
-    <div class="bottom-bar bg-light py-5">
+    <div class="bottom-bar bg-gray py-5">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 pb-5">
@@ -661,6 +964,9 @@
         </div>
     </div>
     <!-- end bottom bar  -->
+
+
+
 
 
 
@@ -786,6 +1092,15 @@
         </div>
     </footer>
     <!-- end footer  -->
+
+
+
+
+
+
+
+
+
 
 
     <script src="assets/js/jquery-3.4.1.js"></script>

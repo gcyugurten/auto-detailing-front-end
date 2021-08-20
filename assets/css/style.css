@@ -5,11 +5,16 @@
   outline: none !important;
 }
 
+.main-txt {
+  color: #bb2828 !important;
+}
+
 .white-transparent-button, .black-transparent-button, .red-button {
   display: inline-block;
   padding: 11px 18px;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none !important;
+  font-weight: 600;
   cursor: pointer;
   border-radius: 3px;
   transition: 0.3s ease-in-out;
@@ -40,6 +45,17 @@
   color: #fff !important;
   background: #bb2828;
   border: 1px solid #bb2828;
+}
+
+.btn-pay {
+  background-color: #bb2828;
+  height: 60px;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.btn-pay:hover {
+  background-color: #862929;
 }
 
 .bg-gray {
@@ -301,6 +317,15 @@ p {
     width: initial !important;
   }
 }
+.client-path {
+  font-size: 14px;
+}
+.client-path a {
+  display: inline-block;
+  padding: 0 7px;
+  color: #464646 !important;
+}
+
 header {
   width: 100% !important;
   height: 100vh !important;
@@ -420,7 +445,7 @@ header .to-bottom i {
 }
 
 .jewels-auto {
-  background: url("../imgs/closeup-shot-retro-car-with-only-back-wheels-ground-street-night.jpg");
+  background: url("assets/imgs/closeup-shot-retro-car-with-only-back-wheels-ground-street-night.jpg");
   background-size: cover;
   background-attachment: fixed;
 }

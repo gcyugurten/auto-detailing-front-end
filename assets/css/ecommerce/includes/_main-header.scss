@@ -104,28 +104,48 @@ header {
                         font-weight: bold;
                     }
                 }
-                .dropdown-menu {
-                    width: 320px;
-                    left: -130px !important;
-                    box-shadow: -1px 2px 13px #acacac;
-
-                    .form-control {
-                        padding: 20px 15px;
-                    }
-                    label {
-                        font-size: 12px;
-                        font-weight: bold;
-                        margin: 0 !important;
-                    }
-                    .links {
-                        .link {
-                            font-size: 13px;
+                .dropdown {
+                    &:not(.user-authed) {
+                        .dropdown-menu {
+                            width: 320px;
+                            left: -130px !important;
+                            box-shadow: -1px 2px 13px #acacac;
+                            
+                            .form-control {
+                                padding: 20px 15px;
+                            }
+                            label {
+                                font-size: 12px;
+                                font-weight: bold;
+                                margin: 0 !important;
+                            }
+                            .links {
+                                .link {
+                                    font-size: 13px;
+                                }
+                            }
                         }
+                       
+                    }
+                    &.user-authed {
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                        .dropdown-item {
+                            font-size: 14px;
+                        }
+                        .action-icon-txt {
+                            font-weight: bold;
+                        }
+
                     }
                 }
+                
             }
         }
-        .dropdown:hover .dropdown-menu {
+        .dropdown:not(.user-authed):hover .dropdown-menu {
             display: block;
             margin-top: 0; 
         }
@@ -163,7 +183,7 @@ header {
                     }
 
                 }
-                &.dropdown:hover > .dropdown-menu, &.dropleft:hover .dropdown-left {
+                &.dropdown:hover > .dropdown-menu {
                     display: block !important;
                     margin: 0;
                 }
@@ -218,7 +238,7 @@ header {
         top: 120px;
         background: #fff;
         display: none;
-        z-index: 99;
+        z-index: 9999;
         .sm-links-list {
             border: 1px solid #ccc;
             border-radius: 3px;
@@ -271,7 +291,7 @@ header {
         opacity: 0;
         transition: .15s ease-in-out;
         background-color: #fff;
-        z-index: 999;
+        z-index: 9999999;
         margin-top: 20px;
         visibility: hidden;
         .subcat-heading {

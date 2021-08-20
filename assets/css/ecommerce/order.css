@@ -783,7 +783,6 @@ header .sub-menu-block li a {
 
 .client-path {
   font-size: 14px;
-  border-bottom: 1px solid #919191;
 }
 .client-path a {
   display: inline-block;
@@ -791,71 +790,70 @@ header .sub-menu-block li a {
   color: #464646 !important;
 }
 
-.all-products .search-by-categories > ul > li {
-  border-bottom: 1px solid #cacaca;
+.order-box th {
+  text-transform: capitalize;
 }
-.all-products .search-by-categories > ul > li a {
-  padding: 15px;
-  transition: .3s ease-in-out;
+.order-box .product-title {
+  font-size: 15px;
+  font-weight: 800;
 }
-.all-products .search-by-categories > ul > li.active, .all-products .search-by-categories > ul > li:hover a {
-  padding-left: 20px;
+.order-box .product-title a {
+  color: inherit !important;
 }
-.all-products .search-by-categories ul li {
-  list-style: none;
-  transition: .25s ease-in-out;
-  border-radius: 3px;
+.order-box .unit-price {
+  color: #bb2828;
+  font-weight: bold;
+  font-size: 17px;
 }
-.all-products .search-by-categories ul li.active {
-  box-shadow: 1px 2px 12px #e4e4e4;
-  background-color: #fff;
+.order-box .quantity {
+  font-weight: bold;
+  font-size: 19px;
 }
-.all-products .search-by-categories ul li a {
-  text-decoration: none;
+.order-box .quantity span {
+  color: #7a7a7a;
+  font-size: 12.5px;
+  font-style: italic;
+}
+.order-box .total-price {
+  color: #df0b40;
+  font-size: 22px;
+  font-weight: bold;
+}
+.order-box .order-products ul {
+  padding-left: 15px;
+}
+.order-box .order-products ul li {
+  color: #6d6d6d;
+}
+.order-box .order-products ul li a {
   color: inherit;
-  font-size: 14.5px;
-  display: block;
+  font-size: 14px;
 }
-.all-products .search-by-categories .sub-menu {
-  display: none;
-  background-color: #f1f1f1;
+.order-box .delivried {
+  color: green;
+  font-weight: 850;
 }
-.all-products .search-by-categories .sub-menu li {
-  padding: 0px 20px;
+.order-box .pending {
+  color: #4e5db4;
+  font-weight: 850;
 }
-.all-products .search-by-categories .sub-menu li:hover {
-  background-color: #fff;
+.order-box .date {
+  font-weight: bold;
 }
-.all-products .search-by-categories .sub-menu li ul li {
-  background-color: #fff;
+.order-box .shipping-infos {
+  font-size: 15px;
+  color: #646464;
 }
-.all-products .search-by-categories .sub-menu li ul li:hover {
-  background-color: #f1f1f1;
+.order-box .track {
+  font-weight: bold;
+  color: #2d748a;
+  font-size: 17px;
 }
-.all-products .toolbar-filering-products {
-  background-color: #fff;
-  box-shadow: 1px 2px 12px #e4e4e4;
-  padding: 15px;
-  border-bottom: 1px solid #cacaca;
-  font-size: 13px;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-toggle {
-  text-decoration: none;
-  color: inherit;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu {
-  left: -50px !important;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu .dropdown-item {
-  padding: 10px 25px;
-  border-bottom: 1px solid #e4e4e4;
-  transition: .3s ease-in-out;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu .dropdown-item:last-child {
-  border-bottom: none;
-}
-.all-products .toolbar-filering-products .dropdown .dropdown-menu .dropdown-item:hover {
-  padding: 10px 30px !important;
+.order-box .shipping-mode {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  color: #757575;
 }
 
-/*# sourceMappingURL=all-products.css.map */
+/*# sourceMappingURL=order.css.map */
