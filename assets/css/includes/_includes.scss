@@ -7,6 +7,7 @@
 
 
 
+
 // ----------------------------- start variables -------------------
 // $mainColor : rgb(189, 8, 8);
 $mainColor : #bb2828;
@@ -65,10 +66,11 @@ $mainColor : #bb2828;
     background-color: $mainColor;
     height: 60px;
     color: #ffffff !important;
-    font-weight: bold
+    font-weight: bold;
+    text-decoration: none !important;
 }
 
-.btn-pay:hover {
+.btn-pay:hover, .red-button:hover {
     background-color: rgb(134, 41, 41)
 }
 
@@ -86,6 +88,14 @@ $mainColor : #bb2828;
     // background: #eee !important;
     background: #eee;
 }
+.bg-fff {
+    background-color: #fff;
+}
+.item-shadowed {
+    box-shadow: 1px -1px 9px rgb(216, 216, 216);
+    padding: 25px;
+}
+
 .my-container {
     width: 95%;
     margin: auto;

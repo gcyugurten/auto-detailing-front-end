@@ -54,7 +54,7 @@
   font-weight: bold;
 }
 
-.btn-pay:hover {
+.btn-pay:hover, .red-button:hover {
   background-color: #862929;
 }
 
