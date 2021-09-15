@@ -14,10 +14,7 @@
 }
 
 
-a {
-    color: inherit !important;
-    text-decoration: none !important;
-}
+
 
 .form-control {
     padding: 1.5rem 15px;
@@ -30,6 +27,10 @@ a {
         text-align: center;
         display: block;
         padding: 4rem 0;
+        
+        color: inherit !important;
+        text-decoration: none !important;
+        
         transition: .3s ease-in-out;
         &:hover {
             .icon i, .title {
@@ -46,5 +47,13 @@ a {
         .title {
             font-weight: bold;
         }
+    }
+}
+
+
+.adresses {
+    a {
+        color: inherit !important;
+        text-decoration: none !important;
     }
 }

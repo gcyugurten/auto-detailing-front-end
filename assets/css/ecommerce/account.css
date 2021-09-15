@@ -590,11 +590,6 @@ header .sub-menu-block li a {
   color: #464646 !important;
 }
 
-a {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
 .form-control {
   padding: 1.5rem 15px;
 }
@@ -605,6 +600,8 @@ a {
   text-align: center;
   display: block;
   padding: 4rem 0;
+  color: inherit !important;
+  text-decoration: none !important;
   transition: .3s ease-in-out;
 }
 .map-boxes .box:hover .icon i, .map-boxes .box:hover .title {
@@ -618,6 +615,11 @@ a {
 }
 .map-boxes .box .title {
   font-weight: bold;
+}
+
+.adresses a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
 
 /*# sourceMappingURL=account.css.map */
