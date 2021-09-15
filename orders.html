@@ -484,62 +484,133 @@
     <div class="profile">
         <div class="client-path bg-light py-4">
             <div class="container">
-                <a href="ecommerce-index.html">Accueil</a> / <a href="all-products.html">Profile</a>
+                <a href="ecommerce-index.html">Accueil</a> / <a href="orders.html">Mes commandes</a>
             </div>
         </div>
         <div class="container py-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="personal-informations card">
-                       
-                        <div class="py-4 px-3">
-                            <div class="special-heading text-center bg-light py-4 mb-2" style="font-size: 17px;">Mes informations personnels</div>
-                            <div class="avatar text-center">
-                                <img src="assets/imgs/avatar.jpeg" alt="">
-                            </div>
-                            <div class="uid">
-                                @jugurthaGaci
-                            </div>
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="">Address Email :</label>
-                                    <input type="text" class="form-control py-4" placeholder="Email" value="jugurthagaci24@gmail.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Nom :</label>
-                                    <input type="text" class="form-control py-4" placeholder="Nom" value="Gaci">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Prénom :</label>
-                                    <input type="text" class="form-control py-4" placeholder="Prénom" value="Jugurtha">
-                                </div>
+            
+            <div class="special-heading">Mes commandes</div>
+
+            <div class="orders py-4">
+                <div class="order-box">
+                    <table class="table border-bottom table-bordered">
+                        <tr>
+                            <th>Numéro</th>
+                            <th>Produits</th>
+                            <th>Total payé</th>
+                            <th>état</th>
+                            <th>Date</th>
+                            <td></td>
+                        </tr>
+            
+                        <tr>
+                            <td>245201</td>
+                            <td class="order-products">
+                               <ul>
+                                   <li>
+                                       <a href="product.html">
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    5 <span>piéces</span>
+                                            </span> )
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="product.html">
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    3 <span>piéces</span>
+                                            </span> )
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="product.html">
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    1 <span>piéce</span>
+                                            </span> )
+                                        </a>
+                                    </li>
+                               </ul>
                                 
-                                <input type="submit" value="Enregistrer" class="btn btn-pay btn-block">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="personal-informations py-4 px-3">
-                        <form action="">
-                            <div class="special-heading text-center bg-light py-4 mb-2" style="font-size: 17px;">Modifier le mot de passe</div>
-                            <div class="form-group">
-                                <label for="">Ancien Mot de passe :</label>
-                                <input type="password" class="form-control py-4" placeholder="Ancien Mot de passe">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Nouveau Mot de passe :</label>
-                                <input type="password" class="form-control py-4" placeholder="Nouveau Mot de passe">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Confirmer le nouveau Mot de passe :</label>
-                                <input type="password" class="form-control py-4" placeholder="Confirmer le nouveau Mot de passe">
-                            </div>
-                            <input type="submit" value="Enregistrer" class="btn btn-pay btn-block">
-                        </form>
-                    </div>
+                            </td>
+                        
+                            <td>
+                                <div class="total-price">204 €</div>
+                            </td>   
+                                
+                            <td>
+                                <div class="status">
+                                    <div class="delivried">
+                                        <i class="fas fa-check"></i> Livrée
+                                    </div>
+                                    <!-- <div class="pending">
+                                        <i class="fas fa-clock"></i> En livraison
+                                    </div>   -->
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">05/09/2021</div>
+                            </td> 
+                            
+                            <td>
+                                <a href="order.html" class="btn btn-success">Détails</a>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>27080509</td>
+                            <td class="order-products">
+                               <ul>
+                                   <li>
+                                       <a href="product.html">
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    5 <span>piéces</span>
+                                            </span> )
+                                        </a>
+                                   </li>
+                                   <li>
+                                        <a href="product.html">
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    3 <span>piéces</span>
+                                            </span> )
+                                        </a>
+                                    </li>
+                                   
+                               </ul>
+                                
+                            </td>
+                        
+                            <td>
+                                <div class="total-price">114 €</div>
+                            </td>        
+                            <td>
+                                <div class="status">
+                                    <!-- <div class="delivried">
+                                        <i class="fas fa-check"></i> Livrée
+                                    </div> -->
+                                    <div class="pending">
+                                        <i class="fas fa-clock"></i> En livraison
+                                    </div>  
+                                    
+                                </div>
+                            </td>
+                            <td>
+                                <div class="date">05/09/2021</div>
+                            </td>
+                            <td>
+                                <a href="order.html" class="btn btn-success">Détails</a>
+                            </td>
+                        </tr>
+            
+                    </table>
                 </div>
             </div>
+
+
         </div>
 
 

@@ -52,6 +52,7 @@
   height: 60px;
   color: #ffffff !important;
   font-weight: bold;
+  text-decoration: none !important;
 }
 
 .btn-pay:hover, .red-button:hover {
@@ -60,6 +61,15 @@
 
 .bg-gray {
   background: #eee;
+}
+
+.bg-fff {
+  background-color: #fff;
+}
+
+.item-shadowed {
+  box-shadow: 1px -1px 9px #d8d8d8;
+  padding: 25px;
 }
 
 .my-container {

@@ -8,6 +8,7 @@
     z-index: 9999;
     background-color: #fff;
     box-shadow: -1px 2px 17px #acacac;
+    display: none;
     .upper-bar {
         display: none;
     }
@@ -128,6 +129,9 @@ header {
                        
                     }
                     &.user-authed {
+                        i {
+                            font-size: 12px;
+                        }
                         img {
                             width: 30px;
                             height: 30px;

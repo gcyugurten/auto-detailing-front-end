@@ -124,20 +124,33 @@ $(document).ready(function() {
 
 
     var lastScrollTop = 0;
-    $(window).scroll(function() {
+    var agree = true;
 
+    $(window).scroll(function() {
+ 
         var st = $(this).scrollTop();
 
         if($(window).scrollTop() > 250) {
-            if (st > lastScrollTop){
-                $('header:not(.not-fixed-onscroll)').removeClass('fixed-header')
-            } else {
-                $('header:not(.not-fixed-onscroll)').fadeIn(300).addClass('fixed-header')
+            if (st > lastScrollTop) {
+
+                $('.fixed-header').remove();
+                agree = true;
+
+            } else if(agree) {
+
+                $('.fixed-header').remove();
+                var fixedHeader = $('header:not(.not-fixed-onscroll)').clone()
+                $(fixedHeader).addClass('fixed-header');
+                $('header:not(.not-fixed-onscroll)').after(fixedHeader)
+                $(fixedHeader).fadeIn();
+
+                agree = false;
+                
             }
             lastScrollTop = st;
 
         } else {
-            $('header:not(.not-fixed-onscroll)').removeClass('fixed-header')
+            $('.fixed-header').remove();
 
         }
 

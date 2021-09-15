@@ -52,6 +52,7 @@
   height: 60px;
   color: #ffffff !important;
   font-weight: bold;
+  text-decoration: none !important;
 }
 
 .btn-pay:hover, .red-button:hover {
@@ -60,6 +61,15 @@
 
 .bg-gray {
   background: #eee;
+}
+
+.bg-fff {
+  background-color: #fff;
+}
+
+.item-shadowed {
+  box-shadow: 1px -1px 9px #d8d8d8;
+  padding: 25px;
 }
 
 .my-container {
@@ -254,6 +264,7 @@ p {
   z-index: 9999;
   background-color: #fff;
   box-shadow: -1px 2px 17px #acacac;
+  display: none;
 }
 .fixed-header .upper-bar {
   display: none;
@@ -349,6 +360,9 @@ header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu la
 }
 header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu .links .link {
   font-size: 13px;
+}
+header .header-nav .action-list li .dropdown.user-authed i {
+  font-size: 12px;
 }
 header .header-nav .action-list li .dropdown.user-authed img {
   width: 30px;
@@ -811,6 +825,9 @@ header .sub-menu-block li a {
   font-weight: bold;
   margin: 0;
   color: #707070;
+}
+.profile .personal-informations .form-control {
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=profile.css.map */
