@@ -1,0 +1,50 @@
+@import "../includes/_includes.scss";
+@import "../includes/_main-footer.scss";
+@import "includes/_main-header.scss";
+@import "includes/_responsive.scss";
+
+
+.client-path {
+    font-size: 14px;
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(70, 70, 70) !important;
+    }
+}
+
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.form-control {
+    padding: 1.5rem 15px;
+}
+
+.map-boxes {
+    .box {
+        box-shadow: 2px -2px 17px #ccc;
+        border-radius: 8px;
+        text-align: center;
+        display: block;
+        padding: 4rem 0;
+        transition: .3s ease-in-out;
+        &:hover {
+            .icon i, .title {
+                color: $mainColor;
+            }
+            
+        }
+        .icon {
+            padding-bottom: 15px;
+            i {
+                font-size: 40px;
+            }
+        }
+        .title {
+            font-weight: bold;
+        }
+    }
+}
