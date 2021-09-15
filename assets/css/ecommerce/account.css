@@ -362,7 +362,7 @@ header .header-nav .action-list li .dropdown:not(.user-authed) .dropdown-menu .l
   font-size: 13px;
 }
 header .header-nav .action-list li .dropdown.user-authed i {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 header .header-nav .action-list li .dropdown.user-authed img {
   width: 30px;
@@ -381,6 +381,9 @@ header .header-nav .dropdown:not(.user-authed):hover .dropdown-menu {
 }
 header .header-nav .categories-toggler i {
   font-size: 23px;
+}
+header .sm-header-nav .action-list li .dropdown.user-authed img {
+  transform: translateY(-6px);
 }
 header .menu-categories {
   border: 1px solid #e1e1e1;
@@ -560,7 +563,7 @@ header .sub-menu-block li a {
     padding: 13px 0;
   }
   .md-header-nav ul i, .sm-header-nav ul i {
-    font-size: 30px !important;
+    font-size: 30px;
   }
 
   .sm-header-nav .dropdown-menu#dropdown-login {

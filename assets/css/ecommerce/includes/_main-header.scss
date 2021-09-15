@@ -44,6 +44,8 @@ header {
                 width: 125px;
             }
         }
+        
+        
         .search-product {
             .form-group {
                 position: relative;
@@ -130,7 +132,7 @@ header {
                     }
                     &.user-authed {
                         i {
-                            font-size: 12px;
+                            font-size: 12px !important;
                         }
                         img {
                             width: 30px;
@@ -159,6 +161,9 @@ header {
             }
         }
     
+    }
+    .sm-header-nav .action-list li .dropdown.user-authed img {
+        transform: translateY(-6px);
     }
     // ------------------ end header nav ---------------------
 

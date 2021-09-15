@@ -24,6 +24,7 @@
     }
 
 
+    
 
 
     // header slideshow 
@@ -84,11 +85,15 @@
         }
         ul {
             padding: 13px 0;
+           
             i {
-                font-size: 30px !important;
+                font-size: 30px;
             }
         }
     }
+
+
+
 
     // drop down login of the header ( mobile version )
     .sm-header-nav .dropdown-menu#dropdown-login {
