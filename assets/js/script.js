@@ -81,6 +81,7 @@ $(document).ready(function() {
             },
             nav: true,
             dots: true,
+            loop: true
             
         })
         

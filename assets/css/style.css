@@ -144,7 +144,7 @@ p {
   z-index: 999;
   position: fixed;
   top: 0 !important;
-  background-color: #f6f6f6  !important;
+  background-color: #fff  !important;
   box-shadow: -2px -3px 20px #838383;
 }
 .fixed-navbar .nav-item .nav-link {
@@ -472,58 +472,86 @@ header .to-bottom i {
   color: #fff;
 }
 
-.products .product-box {
-  border: 1px solid #e1e1e1;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.products .product {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
   margin: 15px 0;
-  overflow: hidden;
 }
-.products .product-box .img {
-  border-bottom: 1px solid #e5e5e5;
-  height: 200px;
+.products .product .product-img {
+  height: 250px;
+  overflow: hidden;
   position: relative;
-  overflow: hidden;
 }
-.products .product-box .img img {
+.products .product .product-img img {
+  height: 100%;
+  min-width: 100%;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-height: 100%;
+  transform: translateX(-50%);
 }
-.products .product-box .title {
-  font-family: "Rubik";
-  font-weight: 600;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 15px;
-  color: #757575;
-}
-.products .product-box .price {
-  text-align: center;
-  padding-bottom: 10px;
-  font-weight: bold;
-  font-family: "Rubik";
-  font-size: 20px;
-}
-.products .product-box .rates i {
+.products .product .product-img span.new {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 12px;
+  color: #fff;
+  background-color: #2d2aeb;
+  border-radius: 4px;
+  z-index: 9;
   font-size: 12px;
-  color: #f6d308;
+  text-transform: uppercase;
 }
-.products .product-box .red-btn {
-  color: #000;
-  border: 1px solid #000;
-  text-align: center;
-  padding: 15px 0;
+.products .product .product-img .second-img {
+  display: none;
+}
+.products .product .product-infos {
+  padding: 20px;
+}
+.products .product .product-infos .category {
+  font-size: 14px;
+  text-transform: capitalize;
   display: block;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #999;
+}
+.products .product .product-infos .title {
+  min-height: 36px;
+  overflow: hidden;
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 14px;
+  display: block;
+}
+.products .product .product-infos .title:hover {
+  color: #bb2828;
+}
+.products .product .product-infos .rating i {
   font-size: 13px;
-  text-decoration: none;
+  color: #f6ca08;
+}
+.products .product .product-infos .prices .cur-price {
+  color: #bb2828;
+  font-size: 23px;
+  font-weight: 900;
+}
+.products .product .product-infos .prices .last-price {
+  text-decoration: line-through;
+  color: #aaaaaa;
+  font-family: "Poppins";
+}
+.products .product:not(.display-grid) .button-cart {
+  visibility: hidden;
+  opacity: 0;
   transition: .3s ease-in-out;
 }
-.products .product-box .red-btn:hover {
-  background: #bb2828;
-  color: #fff;
+.products .product:not(.display-grid):hover .button-cart {
+  visibility: visible;
+  opacity: 1;
+}
+.products .product.display-grid {
+  margin: 15px 0;
 }
 .products .owl-nav button {
   transition: .2s ease-in-out;
@@ -553,9 +581,10 @@ header .to-bottom i {
 }
 
 .testimonials .testimonial-box {
+  border: 1px solid #bcbcbc;
   position: relative;
   margin: 15px 10px;
-  padding: 20px 0;
+  padding: 20px;
   border-radius: 10px;
 }
 .testimonials .testimonial-box .avatar {

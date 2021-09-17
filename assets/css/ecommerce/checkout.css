@@ -144,7 +144,7 @@ p {
   z-index: 999;
   position: fixed;
   top: 0 !important;
-  background-color: #f6f6f6  !important;
+  background-color: #fff  !important;
   box-shadow: -2px -3px 20px #838383;
 }
 .fixed-navbar .nav-item .nav-link {
