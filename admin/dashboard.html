@@ -7,12 +7,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Administration | Jewels auto detailing </title>
+    <title>Administration | Tableau de bord </title>
 </head>
 <body>
 
@@ -22,12 +22,12 @@
     <div class="admin-nav">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="nav-brand">
                         <img src="../assets/imgs/logo-black.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 d-none d-md-block">
                     <form action="" class="search-form mt-2">
                         <div class="form-group">
                             <input type="text" class="form-control py-4" placeholder="Recherchez un produit">
@@ -36,7 +36,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6 float-md-none float-right">
                     <div class="float-right">
                         <div class="dropdown user-avatar">
                             <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -62,19 +62,32 @@
         <div class="col-md-3">
             <aside class="main-sidebar px-4">
 
-                <div class="avatar m-auto py-4 ">
-                    <div class="img float-left pr-3">
-                        <img src="../assets/imgs/avatar.jpeg" alt="">
+                <div class="row">
+                    <div class="col-md-12 col-10">
+                        <div class="avatar m-auto py-4 ">
+                            <div class="img float-left pr-3">
+                                <img src="../assets/imgs/avatar.jpeg" alt="">
+                            </div>
+                            <div class="user">
+                                <div class="name">Ahcene Abbas</div>
+                                <div class="admin d-block">Administrateur</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user">
-                        <div class="name">Ahcene Abbas</div>
-                        <div class="admin d-block">Administrateur</div>
+                    <div class="col-2 d-md-none">
+                        <div class="side-nav-toggler">
+                            <i class="fas fa-bars"></i>
+                        </div>
                     </div>
                 </div>
+              
+
+                
+                <!-- <div class="clearfix"></div> -->
 
                 <nav class="side-nav pt-3">
                     <ul>
-                        <li>
+                        <li class="active">
                             <a href="dashboard.html">
                                 <i class="fas fa-chart-line"></i>
                                 Tableau de bord
@@ -82,32 +95,37 @@
                         </li>
                         <li> 
                             <a href="products.html">
-                                <i class="fas fa-users"></i>
+                                <i class="fas fa-shopping-cart"></i>
                                 Produits
                             </a>
                         </li>
                         <li>
-                            <a href="orders.php">
-                                <i class="fas fa-shopping-cart"></i>
+                            <a href="categories.html">
+                                <i class="fas fa-tags"></i>
                                 Catégories
                             </a>
                         </li>
                         <li> 
-                            <a href="articles.php">
-                                <i class="fas fa-copy"></i>
+                            <a href="orders.html">
+                                <i class="fas fa-cube"></i>
                                 Commandes
                             </a>
                         </li>
                        
                         <li>
-                            <a href="prizes.php">
-                                <i class="fas fa-gifts"></i>
+                            <a href="clients.html">
+                                <i class="fas fa-users"></i>
                                 Clients
                             </a>
                         </li>
                         
-                        
                        
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-user-cog"></i>
+                                Paramétres
+                            </a>
+                        </li>
                         
         
                     </ul>
@@ -117,7 +135,7 @@
         </div>
         <div class="col-md-9">
             <div class="page-content">
-                <div class="pr-2">
+                <div class="container">
 
                     <div class="special-heading py-4">Dashboard</div>
 
@@ -311,7 +329,7 @@
                             <div class="col-md-6">
                                 <div class="item-shadowed bg-fff py-5">
                                     <div class="text-center special-heading pb-5">
-                                        5 Produits les plus vendus
+                                        3 Produits les plus vendus
                                     </div>
                                     <table class="table latest-orders">
                                         <tr>

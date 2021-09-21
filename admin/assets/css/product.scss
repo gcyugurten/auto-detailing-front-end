@@ -1,0 +1,20 @@
+@import "../../../assets/css/includes/_includes.scss";
+
+
+@import '_inc.scss';
+
+
+
+
+
+.product-form {
+    label {
+        margin: 0;
+        font-size: 13px;
+        color: rgb(133, 133, 133);
+        font-weight: bold;
+    }
+    input.form-control {
+        padding: 1.5rem 15px;
+    }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="tinymce/jquery.tinymce.min.js"></script>
+    <script src="tinymce/tinymce.min.js"></script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="assets/css/product.css">
+    <title>Nouveau Produit</title>
+</head>
+<body>
+
+
+    
+    
+    <div class="admin-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-6">
+                    <div class="nav-brand">
+                        <img src="../assets/imgs/logo-black.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 d-none d-md-block">
+                    <form action="" class="search-form mt-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control py-4" placeholder="Recherchez un produit">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 col-6 float-md-none float-right">
+                    <div class="float-right">
+                        <div class="dropdown user-avatar">
+                            <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/imgs/avatar.jpeg" alt="">  <br>
+                                <span class="uid">@gcjugurtha</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> &nbsp; Profile</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; Déconnexion</a>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="row main-row">
+        <div class="col-md-3">
+            <aside class="main-sidebar px-4">
+
+                <div class="row">
+                    <div class="col-md-12 col-10">
+                        <div class="avatar m-auto py-4 ">
+                            <div class="img float-left pr-3">
+                                <img src="../assets/imgs/avatar.jpeg" alt="">
+                            </div>
+                            <div class="user">
+                                <div class="name">Ahcene Abbas</div>
+                                <div class="admin d-block">Administrateur</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-md-none">
+                        <div class="side-nav-toggler">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+              
+                <nav class="side-nav pt-3">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">
+                                <i class="fas fa-chart-line"></i>
+                                Tableau de bord
+                            </a>
+                        </li>
+                        <li class="active"> 
+                            <a href="products.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                Produits
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html">
+                                <i class="fas fa-tags"></i>
+                                Catégories
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="orders.html">
+                                <i class="fas fa-cube"></i>
+                                Commandes
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="clients.html">
+                                <i class="fas fa-users"></i>
+                                Clients
+                            </a>
+                        </li>
+                        
+                       
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-user-cog"></i>
+                                Paramétres
+                            </a>
+                        </li>
+                        
+        
+                    </ul>
+                </nav>
+
+            </aside>
+        </div>
+
+        <div class="col-md-9">
+            <div class="page-content">
+                <div class="container">
+                    
+                    <div class="client-path py-4">
+                        <div class="container">
+                            <a href="dashboard.html">Accueil</a> / <a href="products.html">Produits</a> / <a href="product-edit.html">Ajouter un nouveau produit</a>
+                        </div>
+                    </div>
+
+                    <div class="special-heading py-5">Ajouter un nouveau produit</div>
+
+                    <form action="" class="product-form">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <!-- Gallerie des images  -->
+                                <div class="form-group">
+                                    <label>Gallerie des images</label>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="">Titre du produit</label>
+                                    <input type="text" class="form-control" placeholder="Titre du produit">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="">Description du produit</label>
+                                    <textarea name="content" id="content"></textarea>
+                                </div>
+                                <script>
+                
+                                    tinymce.init({
+                                        selector: '#content',
+                                        language: "fr_FR",
+                                        toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright  imagetools alignjustify | bullist numlist outdent indent | link imageinsertfile a11ycheck image casechange checklist code formatpainter pageembed permanentpen table',
+                                        toolbar_mode: 'floating',
+                                        block_unsupported_drop: true,
+                                        plugins: [
+                                            'advlist autolink lists link image charmap print preview anchor',
+                                            'searchreplace visualblocks fullscreen',
+                                            'insertdatetime media table paste imagetools wordcount',
+                                            'a11ychecker code advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinymcespellchecker'
+                                        ],
+                                        height: 350,
+                                        automatic_uploads : true,
+                                        images_upload_url : '', // walid dir hna url of image uploader script te3k
+                                        image_title: true,
+                                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+                
+                                    });
+                                </script>
+
+                                <div class="form-group">
+                                    <label for="">Quantité</label>
+                                    <input type="number" placeholder="Quantité disponible" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Catégorie</label>
+                                    <select class="form-control">
+                                        <option value="Prélavage">Prélavage</option>
+                                        <option value="Extérieur">Extérieur</option>
+                                        <option value="Intérieur">Intérieur</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Sous catégorie</label>
+                                    <select class="form-control">
+                                        <option value="Prélavage">Prélavage</option>
+                                        <option value="Extérieur">Extérieur</option>
+                                        <option value="Intérieur">Intérieur</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Libéllé de la sous catégorie</label>
+                                    <input type="text" placeholder="Libéllé de la sous catégorie" list="labelSubCat" class="form-control">
+                                    <datalist id="labelSubCat">
+                                        <option value="Prélavage">
+                                        <option value="Extérieur">
+                                    </datalist>
+                                </div>
+                                
+                                <div class="form-gorup">
+                                    <input type="submit" value="Enregistrer le produit" class="btn btn-pay p-3">
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        
+
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    
+
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+
+
+
+@import "_responsive.scss";
+
+
+
+
+
+
+
+// ----------------------- headings -----------------
+.special-heading {
+    font-size: 20px !important;
+}
+
+// ----------------------- headings -----------------
+
+
+
+
+
+
+
+
+
+
+// ------------------ start pagination tables --------------
+
+.filter-results {
+    span {
+        color: rgb(90, 90, 90);
+        font-size: 13px;
+    }
+    select {
+        border: 1px solid #c7c6c6;
+        padding: 7px 9px;
+        border-radius: 15px;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+}
+// ----
+.pagination {
+    text-align: center;
+    .page-item {
+        background-color: #fff;  
+        &:not(.disabled):hover, &.active {
+            a {
+                background-color: rgb(68, 68, 68);
+                color: #fff;
+                border-color: transparent !important;
+
+            }
+        }
+        a, span {
+            transition: .2s ease-in-out;
+            padding: 13px 15px;
+            display: inline-block;
+            font-size: 14px;
+            color: inherit ;
+            font-weight: 500;
+            text-decoration: none !important;
+        }
+         
+    }
+}
+// ------------------ end pagination tables --------------
+
+
+
+
+
+
+
+
+
+// --------------------- page structure -------------
+.admin-nav {
+    height: 70px;
+    box-shadow: 1px -1px 9px #ccc;
+    
+    .nav-brand {
+        line-height: 70px;
+        img {
+            width: 100px;
+        }
+    }
+    .search-form {
+        .form-group {
+            position: relative;
+            button {
+                position: absolute;
+                border: none;
+                background: none;
+                top: 12px;
+                right: 15px;
+                color: rgb(121, 121, 121);
+                transition: .5s ease-in-out;
+                font-size: 20px;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+    .user-avatar {
+        padding-top: 6px;
+        .uid {
+            font-size: 13px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+// ----
+
+.main-row {
+    background-color: #f5f5f5;
+    margin: 0 !important;
+    .main-sidebar {
+        min-height: 100% !important;
+        background-color: #fff;
+        .avatar {
+            .img img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            .user {
+                .name {
+                    font-weight: bold;
+                    font-family: "Rubik";
+                }
+                .admin {
+                    font-size: 13px;
+                    font-family: "Montserrat";
+                }
+            }
+            
+        }
+        .side-nav {
+            > ul {
+                padding: 0 !important;
+                > li {
+                    border-radius: 5px;
+                    list-style: none;
+                    margin: 5px 0;
+                    position: relative;
+                    overflow: hidden;
+                    border-bottom: 1px solid #ccc;
+                    padding: 10px 15px;
+                    a {
+                        transition: .4s ease-in-out;
+                        text-decoration: none;
+                        color: rgb(119, 119, 119) !important;
+                        display: block;
+                        font-family: "Roboto";
+
+                        &:hover {
+                            padding-left: 7px;
+    
+                        }
+                        i {
+                            padding-right: 10px;
+                        }
+                    }
+                    &.active {
+                        background-color: #4b4a4a;
+                        a { color: #fff !important; }
+                    }
+                }
+            }
+            .sub-ul {
+                display: none;
+                padding-top: 15px;
+                li {
+                    list-style: none;
+                    padding: 5px 0;
+                }
+            }
+          
+        }
+    }
+    .page-content {
+        min-height: calc(100vh - 70px);   
+        padding-bottom: 20px;  
+    }
+
+
+    
+}
+
+// ----
+
+body {
+    overflow-x: hidden;
+}
+// --------------------- end page structure -------------
+
+
+
+
+
+
+
+
+// -------------------- client path --------------
+.client-path {
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    a {
+        display: inline-block;
+        padding: 0 7px;
+        color: rgb(70, 70, 70) !important;
+    }
+}
+// -------------------- client path --------------
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------- statistics tables ---------
+table {
+    tr:first-child th{ text-transform: uppercase; font-size: 12px; font-weight: bold; }
+    &.products-table {
+        tr:first-child {
+            background-color: rgb(68, 68, 68);
+            th {
+                color: #fff;
+            }
+        }
+        tr:not(:first-child) {
+            background-color: rgb(255, 255, 255);
+            &:hover {
+                background-color: #f5f5f5;
+
+            }
+        }
+        
+
+    }
+    td {
+        color: rgb(133, 133, 133);
+        font-size: 14px;
+        font-weight: 500;
+        
+        
+    }
+    .edit a {
+        // color: inherit !important;
+        i {
+            font-size: 13px ;
+        }
+    }
+    .product-img {
+        img { height: 60px; }
+    }
+    .product-thumbnail {
+        width: 65px;
+        height: 65px;
+        border: 1px solid black;
+        img {
+            width: 100%;
+        }
+    }
+    .avatar {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    .price {
+        font-size: 15px;
+        color: #000;
+        font-weight: bold;
+    }
+    .status {
+        &.payed {
+            color: rgb(39, 150, 39);
+            font-weight: bold;
+            font-size: 15px;
+        }
+        &.reimbursed {
+            color: rgb(233, 25, 70);
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+}
+// ------------------------- statistics table ------------
+
+
+
+.main-row > .col-md-3:first-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+
+
+
+.item-shadowed {
+    box-shadow: 1px -1px 9px rgb(216, 216, 216);
+    padding: 25px;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.popup {
+    padding: 25px;
+    position: fixed;
+    z-index: 999999999 !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 800px;
+    box-shadow: 1px -1px 19px #ccc;
+    .close { cursor: pointer; }   
+    display: none;
+    border-radius: 20px;
+}
+.popup-bg {
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    z-index: 9999999 !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}

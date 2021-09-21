@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Administration | Jewels auto detailing </title>
+    <link rel="stylesheet" href="assets/css/product.css">
+    <title>Liste de produits</title>
 </head>
 <body>
 
@@ -22,12 +22,12 @@
     <div class="admin-nav">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 col-6">
                     <div class="nav-brand">
                         <img src="../assets/imgs/logo-black.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 d-none d-md-block">
                     <form action="" class="search-form mt-2">
                         <div class="form-group">
                             <input type="text" class="form-control py-4" placeholder="Recherchez un produit">
@@ -36,7 +36,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6 float-md-none float-right">
                     <div class="float-right">
                         <div class="dropdown user-avatar">
                             <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -62,16 +62,25 @@
         <div class="col-md-3">
             <aside class="main-sidebar px-4">
 
-                <div class="avatar m-auto py-4 ">
-                    <div class="img float-left pr-3">
-                        <img src="../assets/imgs/avatar.jpeg" alt="">
+                <div class="row">
+                    <div class="col-md-12 col-10">
+                        <div class="avatar m-auto py-4 ">
+                            <div class="img float-left pr-3">
+                                <img src="../assets/imgs/avatar.jpeg" alt="">
+                            </div>
+                            <div class="user">
+                                <div class="name">Ahcene Abbas</div>
+                                <div class="admin d-block">Administrateur</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user">
-                        <div class="name">Ahcene Abbas</div>
-                        <div class="admin d-block">Administrateur</div>
+                    <div class="col-2 d-md-none">
+                        <div class="side-nav-toggler">
+                            <i class="fas fa-bars"></i>
+                        </div>
                     </div>
                 </div>
-
+              
                 <nav class="side-nav pt-3">
                     <ul>
                         <li>
@@ -80,33 +89,38 @@
                                 Tableau de bord
                             </a>
                         </li>
-                        <li> 
+                        <li class="active"> 
                             <a href="products.html">
-                                <i class="fas fa-users"></i>
+                                <i class="fas fa-shopping-cart"></i>
                                 Produits
                             </a>
                         </li>
                         <li>
-                            <a href="orders.php">
-                                <i class="fas fa-shopping-cart"></i>
+                            <a href="categories.html">
+                                <i class="fas fa-tags"></i>
                                 Catégories
                             </a>
                         </li>
                         <li> 
-                            <a href="articles.php">
-                                <i class="fas fa-copy"></i>
+                            <a href="orders.html">
+                                <i class="fas fa-cube"></i>
                                 Commandes
                             </a>
                         </li>
                        
                         <li>
-                            <a href="prizes.php">
-                                <i class="fas fa-gifts"></i>
+                            <a href="clients.html">
+                                <i class="fas fa-users"></i>
                                 Clients
                             </a>
                         </li>
                         
-                        
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-user-cog"></i>
+                                Paramétres
+                            </a>
+                        </li>
                        
                         
         
@@ -115,66 +129,99 @@
 
             </aside>
         </div>
+
         <div class="col-md-9">
             <div class="page-content">
                 <div class="container" id="products">
+
+
+                    <div class="client-path py-4">
+                        <div class="container">
+                            <a href="dashboard.html">Accueil</a> / <a href="products.html">Produits</a>
+                        </div>
+                    </div>
+
+                 
                     <div class="special-heading py-4">Produits</div>
 
-                    <div class="float-right pb-3">
-                        <a href="" class="btn-pay py-3 px-5">+ Nouveau produit</a>
-                    </div>
-                    <div class="clearfix"></div>
-
-                    <form action="">
-                        <div class="filter py-4">
-                            <div>
-                                <span>Maximum de résultat par page : </span>
-                                <input type="number" value="20">
-                            </div>
-                            
-                            <div class="clearfix"></div>
+                    <div class="filter-results pb-4">
+                        <div class="float-md-left float-none">
+                            <span>Résultat par page : </span>
+                            <select name="" id="">
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                    
                         </div>
+                        <div class="float-md-right float-none">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i> &nbsp; Précédent</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#">...</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Suivant &nbsp; <i class="fas fa-angle-right"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
                         <div class="clearfix"></div>
-                        <table class="table products-table table-bordered">
-                            <tr>
-                                <th>ID</th>
-                                <th>
-                                    <label style="font-size: 7px;" for="selectAll">Select tout</label>
-                                    <input type="checkbox" name="selectAll" id="selectAll">
-                                </th>
-                                <th>Photo</th>
-                                <th>Titre</th>
-                                <th>Catégorie</th>
-                                <th>Sous-catégorie</th>
-                                <th>Prix</th>
-                                <th>Quantité</th>
-                                <th>Quantité restante</th>
-                                <th>état</th>
-                                <th>action</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <input type="checkbox">
-                                </td>
-                                <td>
-                                    <div class="product-thumbnail">
-                                        <img src="../assets/imgs/products/2.png" alt="">
-                                    </div>
-                                </td>
-                                <td>Car washing product</td>
-                                <td>Extérieur</td>
-                                <td>Prélavage > Sous-sous-catégorie</td>
-                                <td class="price">24150 €</td>
-                                <td>150</td>
-                                <td>123</td>
-                                <td>Active</td>
-                                <td>
-                                    <a href="">Modifier</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
+                    </div>
+
+                    <div class="float-right mb-2">
+                        <a href="product-edit.html" class="btn btn-success"><i class="fas fa-plus"></i> Nouveau produit</a>
+                    </div>
+
+                    <table class="table products-table table-bordered table-respdonsive">
+                        <tr>
+                            <th>ID</th>
+                            <th>Photo</th>
+                            <th>Titre</th>
+                            <th>Catégorie</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Stock</th>
+                            <th>Date d'ajout</th>
+                            <th>action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="product-thumbnail">
+                                    <img src="../assets/imgs/products/2.png" alt="">
+                                </div>
+                            </td>
+                            <td>Car washing product</td>
+                            <td>Extérieur</td>
+                            <td class="price">24150 €</td>
+                            <td>150</td>
+                            <td>disponible</td>
+
+                            <td>30-4-2020</td>
+                            <td class="edit">
+                                <form action="">
+
+                                    <a href="product-edit.html" class="btn btn-info"><i class="fas fa-pen"></i></a>
+                                    <button type="submit" class="btn btn-danger"> <i class="fas fa-trash"></i> </button>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                    
                 </div>
             </div>
         </div>
@@ -189,6 +236,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/products.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
