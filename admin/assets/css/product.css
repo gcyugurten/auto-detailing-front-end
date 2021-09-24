@@ -332,9 +332,6 @@ table.products-table tr:first-child th {
 table.products-table tr:not(:first-child) {
   background-color: white;
 }
-table.products-table tr:not(:first-child):hover {
-  background-color: #f5f5f5;
-}
 table td {
   color: #858585;
   font-size: 14px;

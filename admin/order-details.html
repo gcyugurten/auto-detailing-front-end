@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/orders.css">
+    <title>Liste des commandes</title>
+</head>
+<body>
+
+
+    
+    
+    <div class="admin-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-6">
+                    <div class="nav-brand">
+                        <img src="../assets/imgs/logo-black.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 d-none d-md-block">
+                    <form action="" class="search-form mt-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control py-4" placeholder="Recherchez un produit">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="float-right">
+                        <div class="dropdown user-avatar">
+                            <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/imgs/avatar.jpeg" alt="">  <br>
+                                <span class="uid">@gcjugurtha</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="settings.html"><i class="fas fa-user"></i> &nbsp; Paramétres</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> &nbsp; Déconnexion</a>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="row main-row">
+        <div class="col-md-3">
+            <aside class="main-sidebar px-4">
+
+                <div class="row">
+                    <div class="col-md-12 col-10">
+                        <div class="avatar m-auto py-4 ">
+                            <div class="img float-left pr-3">
+                                <img src="../assets/imgs/avatar.jpeg" alt="">
+                            </div>
+                            <div class="user">
+                                <div class="name">Ahcene Abbas</div>
+                                <div class="admin d-block">Administrateur</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-md-none">
+                        <div class="side-nav-toggler">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+          
+                <nav class="side-nav pt-3">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html">
+                                <i class="fas fa-chart-line"></i>
+                                Tableau de bord
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="products.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                Produits
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categories.html">
+                                <i class="fas fa-tags"></i>
+                                Catégories
+                            </a>
+                        </li>
+                        <li class="active"> 
+                            <a href="orders.html">
+                                <i class="fas fa-cube"></i>
+                                Commandes
+                            </a>
+                        </li>
+                       
+                        <li>
+                            <a href="clients.html">
+                                <i class="fas fa-users"></i>
+                                Clients
+                            </a>
+                        </li>
+                        <li>
+                            <a href="settings.html">
+                                <i class="fas fa-user-cog"></i>
+                                Paramétres
+                            </a>
+                        </li>
+                        
+                       
+                        
+        
+                    </ul>
+                </nav>
+                
+
+            </aside>
+        </div>
+
+        <div class="col-md-9">
+            <div class="page-content">
+                <div class="container" id="products">
+                    <div class="client-path py-4">
+                        <div class="container">
+                            <a href="dashboard.html">Accueil</a> / <a href="orders.html">Commandes</a> / <a href="order-details.html">Commande n° 23678</a>
+                        </div>
+                    </div>
+
+                    <h1 class="special-heading py-4">Détails de la commande n° 23678</h1>
+
+                    <div class="order-box pb-5">
+               
+                        <table class="products-table table border-bottom table-bordered">
+                            <tr>
+                                <th>Produits</th>
+                                <th>Client</th>
+                                <th>Total payé</th>
+                                
+                                <th>état</th>
+                                <th>Date</th>
+                                <th>action</th>
+                            </tr>
+        
+                            <tr>
+                                <td class="order-products">
+                                   <ul>
+                                       <li>
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    5 <span>piéces</span>
+                                            </span> )
+                                       </li>
+                                       <li>
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    3 <span>piéces</span>
+                                            </span> )
+                                        </li>
+                                        <li>
+                                            TIRE SIO2 JANUS dressing pneus nacré
+                                            ( <span class="quantity">
+                                                    1 <span>piéce</span>
+                                            </span> )
+                                        </li>
+                                    </ul>
+                                    <div class="py-4">
+                                        <a href="" class="btn-pay d-inline-block px-5 py-3">Télécharger la facture</a>
+                                    </div>
+                                </td>
+                            
+                                <td>@jugurthaGc</td>
+                                <td>
+                                    <div class="total-price">204 €</div>
+                                </td>   
+                                    
+                                
+        
+                                <td>
+                                    <div class="status">
+                                        <!-- <div class="delivried">
+                                            <i class="fas fa-check"></i> Livrée
+                                        </div> -->
+                                        <div class="pending">
+                                            <i class="fas fa-clock"></i> En livraison
+                                        </div>  
+                                        
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="date">05/09/2021</div>
+                                </td> 
+                                <td>
+                                    <a href="" class="btn btn-sm btn-success"> Confirmer </a>
+                                </td>
+                            </tr>
+        
+              
+        
+                        </table>
+        
+        
+                        <div class="special-heading py-4">Détails de Livraison :</div>
+                        <table class="table border-bottom table-bordered products-table">
+                            <tr>
+                                <th>Mode de livraison</th>
+                                <th>Cout de livraison</th>
+                                <th>Addresse de livraison</th>
+                                <th>Numéro de suivi</th>
+                            </tr>
+        
+                            <tr>
+                                <td class="shipping-mode">Chronoposte</td>    
+                            
+                                <td>
+                                    <div class="total-price">204 €</div>
+                                </td>   
+                                <td class="shipping-infos">
+                                    Aderji Chorfa Bouira <br>
+                                    Chorfa 10019 <br>
+                                    Algérie
+                                </td>
+                                <td class="track">
+                                    5612045130g75FT54cJ
+                                </td>
+        
+                                
+                            </tr>
+        
+              
+        
+                        </table>
+        
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    
+
+    <script src="../assets/js/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

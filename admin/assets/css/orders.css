@@ -411,4 +411,70 @@ table .status.reimbursed {
   display: none;
 }
 
-/*# sourceMappingURL=categories.css.map */
+.order-box th {
+  text-transform: capitalize;
+}
+.order-box .product-title {
+  font-size: 15px;
+  font-weight: 800;
+}
+.order-box .product-title a {
+  color: inherit !important;
+}
+.order-box .unit-price {
+  color: #bb2828;
+  font-weight: bold;
+  font-size: 17px;
+}
+.order-box .quantity {
+  font-weight: bold;
+  font-size: 19px;
+}
+.order-box .quantity span {
+  color: #7a7a7a;
+  font-size: 12.5px;
+  font-style: italic;
+}
+.order-box .total-price {
+  color: #df0b40;
+  font-size: 22px;
+  font-weight: bold;
+}
+.order-box .order-products ul {
+  padding-left: 15px;
+}
+.order-box .order-products ul li {
+  color: #6d6d6d;
+}
+.order-box .order-products ul li a {
+  color: inherit;
+  font-size: 14px;
+}
+.order-box .delivried {
+  color: green;
+  font-weight: 850;
+}
+.order-box .pending {
+  color: #4e5db4;
+  font-weight: 850;
+}
+.order-box .date {
+  font-weight: bold;
+}
+.order-box .shipping-infos {
+  font-size: 15px;
+  color: #646464;
+}
+.order-box .track {
+  font-weight: bold;
+  color: #2d748a;
+  font-size: 17px;
+}
+.order-box .shipping-mode {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+  color: #757575;
+}
+
+/*# sourceMappingURL=orders.css.map */
