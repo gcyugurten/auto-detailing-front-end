@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/product.css">
-    <title>Liste de produits</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Administration | Tableau de bord </title>
 </head>
 <body>
 
@@ -41,7 +41,7 @@
                         <div class="dropdown user-avatar">
                             <a type="button" class="text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="../assets/imgs/avatar.jpeg" alt="">  <br>
-                                <span class="uid">@gcjugurtha</span>
+                                <span class="uid">@ahcenAbbas</span>
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="settings.html"><i class="fas fa-user"></i> &nbsp; Paramétres</a>
@@ -81,6 +81,10 @@
                     </div>
                 </div>
               
+
+                
+                <!-- <div class="clearfix"></div> -->
+
                 <nav class="side-nav pt-3">
                     <ul>
                         <li class="active">
@@ -119,13 +123,6 @@
                             </a>
                         </li>
                        
-                        <li> 
-                            <a href="factures.html">
-                                <i class="fas fa-scroll"></i>
-                                Factures
-                            </a>
-                        </li>
-
                         <li>
                             <a href="clients.html">
                                 <i class="fas fa-users"></i>
@@ -147,99 +144,13 @@
 
             </aside>
         </div>
-
         <div class="col-md-9">
             <div class="page-content">
-                <div class="container" id="products">
+                <div class="container">
+
+                    <div class="special-heading py-4">Toutes les factures</div>
 
 
-                    <div class="client-path py-4">
-                        <div class="container">
-                            <a href="dashboard.html">Accueil</a> / <a href="products.html">Produits</a>
-                        </div>
-                    </div>
-
-                 
-                    <div class="special-heading py-4">Produits</div>
-
-                    <div class="filter-results pb-4">
-                        <div class="float-md-left float-none">
-                            <span>Résultat par page : </span>
-                            <select name="" id="">
-                                <option value="20">20</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                            </select>
-                    
-                        </div>
-                        <div class="float-md-right float-none">
-                            <nav>
-                                <ul class="pagination">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i> &nbsp; Précédent</a>
-                                    </li>
-                                    <li class="page-item active">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#">...</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Suivant &nbsp; <i class="fas fa-angle-right"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="float-right mb-2">
-                        <a href="product-edit.html" class="btn btn-success"><i class="fas fa-plus"></i> Nouveau produit</a>
-                    </div>
-
-                    <table class="table products-table table-bordered table-respdonsive">
-                        <tr>
-                            <th>ID</th>
-                            <th>Photo</th>
-                            <th>Titre</th>
-                            <th>Catégorie</th>
-                            <th>Prix</th>
-                            <th>Quantité</th>
-                            <th>Stock</th>
-                            <th>Date d'ajout</th>
-                            <th>action</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <div class="product-thumbnail">
-                                    <img src="../assets/imgs/products/2.png" alt="">
-                                </div>
-                            </td>
-                            <td>Car washing product</td>
-                            <td>Extérieur</td>
-                            <td class="price">24150 €</td>
-                            <td>150</td>
-                            <td>disponible</td>
-
-                            <td>30-4-2020</td>
-                            <td class="edit">
-                                <form action="">
-
-                                    <a href="product-edit.html" class="btn btn-info"><i class="fas fa-pen"></i></a>
-                                    <button type="submit" class="btn btn-danger"> <i class="fas fa-trash"></i> </button>
-                                </form>
-                            </td>
-                        </tr>
-                    </table>
-                    
                 </div>
             </div>
         </div>
