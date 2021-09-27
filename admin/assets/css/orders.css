@@ -272,17 +272,17 @@ p {
   border-bottom: 1px solid #ccc;
   padding: 10px 15px;
 }
-.main-row .main-sidebar .side-nav > ul > li a {
+.main-row .main-sidebar .side-nav > ul > li > a {
   transition: .4s ease-in-out;
   text-decoration: none;
   color: #777777 !important;
   display: block;
   font-family: "Roboto";
 }
-.main-row .main-sidebar .side-nav > ul > li a:hover {
+.main-row .main-sidebar .side-nav > ul > li > a:hover {
   padding-left: 7px;
 }
-.main-row .main-sidebar .side-nav > ul > li a i {
+.main-row .main-sidebar .side-nav > ul > li > a i {
   padding-right: 10px;
 }
 .main-row .main-sidebar .side-nav > ul > li.active {
@@ -291,13 +291,17 @@ p {
 .main-row .main-sidebar .side-nav > ul > li.active a {
   color: #fff !important;
 }
-.main-row .main-sidebar .side-nav .sub-ul {
-  display: none;
+.main-row .main-sidebar .side-nav > ul > li .sub-menu {
+  padding-left: 50px;
   padding-top: 15px;
+  display: none;
 }
-.main-row .main-sidebar .side-nav .sub-ul li {
+.main-row .main-sidebar .side-nav > ul > li .sub-menu li {
   list-style: none;
   padding: 5px 0;
+}
+.main-row .main-sidebar .side-nav > ul > li .sub-menu li a {
+  color: #777777 !important;
 }
 .main-row .page-content {
   min-height: calc(100vh - 70px);

@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    $('#submenu-toggler').click(function() {
+        $('.sub-menu').slideToggle(400)
+    })
+
+
     $('.show-popup').click(function(e) {
         e.preventDefault();
         $('#'+ $(this).data("show") + ", .popup-bg").fadeIn(100)

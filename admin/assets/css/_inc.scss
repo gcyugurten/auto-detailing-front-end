@@ -157,7 +157,7 @@
                     overflow: hidden;
                     border-bottom: 1px solid #ccc;
                     padding: 10px 15px;
-                    a {
+                    > a {
                         transition: .4s ease-in-out;
                         text-decoration: none;
                         color: rgb(119, 119, 119) !important;
@@ -176,16 +176,21 @@
                         background-color: #4b4a4a;
                         a { color: #fff !important; }
                     }
+                    .sub-menu {
+                        padding-left: 50px;
+                        padding-top: 15px;
+                        display: none;
+                        li {
+                            list-style: none;
+                            padding: 5px 0;
+                            a {
+                                color: rgb(119, 119, 119) !important;
+                            }
+                        }
+                    }
                 }
             }
-            .sub-ul {
-                display: none;
-                padding-top: 15px;
-                li {
-                    list-style: none;
-                    padding: 5px 0;
-                }
-            }
+           
           
         }
     }
