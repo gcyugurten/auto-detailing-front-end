@@ -322,18 +322,16 @@ body {
   color: #464646 !important;
 }
 
+table tr:first-child {
+  background-color: #444444;
+}
 table tr:first-child th {
+  color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
 }
-table.products-table tr:first-child {
-  background-color: #444444;
-}
-table.products-table tr:first-child th {
-  color: #fff;
-}
-table.products-table tr:not(:first-child) {
+table tr:not(:first-child) {
   background-color: white;
 }
 table td {
@@ -374,6 +372,16 @@ table .status.reimbursed {
   color: #e91946;
   font-weight: bold;
   font-size: 15px;
+}
+table.factures-table td {
+  font-size: 16px;
+  color: gray;
+  font-family: "Rubik";
+}
+table .order-number {
+  font-size: 17px;
+  color: #000 !important;
+  font-weight: bold;
 }
 
 .main-row > .col-md-3:first-child {

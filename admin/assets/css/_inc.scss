@@ -241,21 +241,22 @@ body {
 
 // ---------------------------- statistics tables ---------
 table {
-    tr:first-child th{ text-transform: uppercase; font-size: 12px; font-weight: bold; }
-    &.products-table {
-        tr:first-child {
-            background-color: rgb(68, 68, 68);
-            th {
-                color: #fff;
-            }
+    tr:first-child {
+        background-color: rgb(68, 68, 68);
+        th {
+            color: #fff;
+            text-transform: uppercase; 
+            font-size: 12px; 
+            font-weight: bold;
         }
-        tr:not(:first-child) {
-            background-color: rgb(255, 255, 255);
-            
-        }
-        
-
     }
+    tr:not(:first-child) {
+        background-color: rgb(255, 255, 255);
+        
+    }
+    
+
+    
     td {
         color: rgb(133, 133, 133);
         font-size: 14px;
@@ -303,6 +304,16 @@ table {
             font-weight: bold;
             font-size: 15px;
         }
+    }
+    &.factures-table td {
+        font-size: 16px;
+        color: rgb(128, 128, 128);
+        font-family: "Rubik";
+    }
+    .order-number {
+        font-size: 17px;
+        color: #000 !important;
+        font-weight: bold;
     }
 }
 // ------------------------- statistics table ------------

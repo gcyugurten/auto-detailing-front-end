@@ -87,7 +87,7 @@
 
                 <nav class="side-nav pt-3">
                     <ul>
-                        <li class="active">
+                        <li>
                             <a href="dashboard.html">
                                 <i class="fas fa-chart-line"></i>
                                 Tableau de bord
@@ -123,6 +123,13 @@
                             </a>
                         </li>
                        
+                        <li class="active"> 
+                            <a href="factures.html">
+                                <i class="fas fa-scroll"></i>
+                                Factures
+                            </a>
+                        </li>
+
                         <li>
                             <a href="clients.html">
                                 <i class="fas fa-users"></i>
@@ -150,6 +157,24 @@
 
                     <div class="special-heading py-4">Toutes les factures</div>
 
+                    <table class="table factures-table border-bottom table-bordered">
+                        <tr>
+                            <th>N°</th>
+                            <th>Date de la commande</th>
+                            <th>Date de la confirmation</th>
+                            <th>action</th>
+                        </tr>
+    
+                        <tr>
+                            <td  class="order-number">23456</td>
+                            <td>25/09/2021</td>
+                            <td>27/09/2021</td>
+                            <td>
+                                <a href="" class="btn btn-success"><i class="fas fa-download"></i> Télécharger</a>
+                            </td>
+                        </tr>
+    
+                    </table>
 
                 </div>
             </div>
